@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/Logo-W.png" alt="LOGO"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                        <a class="nav-link" href="about.html">À propos</a>
+                        <a class="nav-link active" aria-current="page" href="projects.html">Mes Projets</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div style="width: 90%; margin: 30px auto;">
+            <h1 style="text-align: center; margin: 30px;">Magasin de jouets API</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+                alias. Reprehenderit, doloribus dolor
+                facilis eligendi mollitia nihil doloremque vero aut eius exercitationem officiis error incidunt sequi
+                nam
+                placeat molestias nisi perspiciatis? Consectetur quos sapiente iure delectus nemo est explicabo totam.
+                Possimus magni ratione hic consequatur autem, cumque omnis quas? Sint?</p>
+            <a href="https://github.com/WilliamBitton/Game_store_Api">Pour voir le projet sur GitHub, cliquez ici</a>
+        </div>
+        <div style="width: 90%; margin: 0 auto; display: flex; justify-content: center;">
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/categories">Categories</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/categories/637bc5cc85b7540a4240605e">Category A</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/categories/637bc5cc85b7540a42406062">Category B</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/products">Products</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/products/637d582c85b7540a42406228">Product A</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/products/637d582c85b7540a4240622a">Product B</a>
+            <a style="margin: 15px;" href="#" class="link" data-src="https://tp3-vpic.onrender.com/cart">Cart</a>
+            <a style="margin: 15px;" href="#" class="link" data-src="https://tp3-vpic.onrender.com/users">Users</a>
+            <a style="margin: 15px;" href="#" class="link" data-src="https://tp3-vpic.onrender.com/users/profile">User
+                profile</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/users/63632f38a1243bcf77a82320">User A</a>
+            <a style="margin: 15px;" href="#" class="link"
+                data-src="https://tp3-vpic.onrender.com/users/63632f3ca1243bcf77a82324">User B</a>
+        </div>
+        <div style="display: flex; justify-content: center; height: 80vh; margin:30px 0 30px 0;">
+            <iframe id="iframe" src="https://tp3-vpic.onrender.com/categories"
+                style="width: 90%; height: 100%; border: 2px solid black;"></iframe>
+        </div>
+    </main>
+
+    <script>
+        const iframe = document.getElementById('iframe');
+        const links = document.querySelectorAll('.link');
+
+        links.forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const src = link.getAttribute('data-src');
+                iframe.src = src;
+            });
+        });
+    </script>
+
+    <footer class="text-bg-success">
+        <p class="m-0 p-2 text-center text-dark">2023</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Accueil</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/Logo-W.png" alt="LOGO"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+            <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="projects.html">Mes Projets</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <nav class="mt-2" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-2">
+        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
+      </ol>
+    </nav>
+    <h1 class="text-success text-center mt-5 mb-5 fs-3">Accueil</h1>
+    <div class="card m-5">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="https://picsum.photos/400/200" class="p-3 img-fluid rounded-start w-100 m-auto position-relative top-50 start-50 translate-middle" alt="Profile picture">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title mt-4">Résumé</h5>
+            <p class="card-text mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus dolorem
+              reiciendis quibusdam aliquid ducimus facilis totam nam id ex quam aperiam nesciunt commodi amet,
+              voluptatibus, vitae ad facere dolore laudantium veritatis. Eos reiciendis odio accusamus repudiandae, sit
+              excepturi quae facilis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="carousel" class="carousel slide m-5">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1024/600" class="d-block w-75 m-auto" alt="https://picsum.photos/1024/600">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon text-bg-success rounded" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon text-bg-success rounded" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+  <footer class="text-bg-success">
+    <p class="m-0 p-2 text-center text-dark">2023</p>
+  </footer>
+</body>
+
+</html>

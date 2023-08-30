@@ -1,0 +1,104 @@
+body {
+    background-image: url(../img/nick-fewings-q2VwjLMwt9g-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-color: #B4BDC4;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+
+form {
+    padding-bottom: 50px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 200px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: block;
+}
+
+button:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.error {
+    border-color: red;
+}
+
+#error,
+#errorNb {
+    height: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+span {
+    width: 180px;
+}
+
+#result {
+    font-size: 25px;
+}
+
+#game img {
+    margin: 2px 4px 0px 4px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.flipped {
+    transform: rotateY(180deg) scaleX(-1);
+}
+
+.displayNone {
+    display: none;
+}
+
+.paddingBottom {
+    padding-bottom: 50px;
+}
+
+.marginTop {
+    margin-top: 50px;
+}
+
+.hidden {
+    visibility: hidden;
+}

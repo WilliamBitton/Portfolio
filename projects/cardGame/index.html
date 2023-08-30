@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jeu de mémoire</title>
+</head>
+
+<main>
+    <h1>Jeu de mémoire</h1>
+
+    <div id="errorNb"></div>
+    <div id="error"></div>
+
+    <div class="info">
+        <span id="name"></span>
+        <span id="timer"></span>
+    </div>
+
+    <div id="result"></div>
+    <div id="game"></div>
+
+    <form action="index.html" method="post" id="form">
+        <label for="numberOfPairs">Nombre de paires</label>
+        <input type="number" step="1" name="numberOfPairs" id="numberOfPairs">
+        <label for="firstName">Entrez votre nom</label>
+        <input type="text" id="firstName" name="firstName">
+        <button type="submit" value="Lancer le jeu">Lancer le jeu</button>
+    </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+
+</html>

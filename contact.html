@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Contact</title>
+  <script>
+    function initMap() {
+      const garneau = { lat: 46.7935879, lng: -71.2627805 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: garneau,
+      });
+      const marker = new google.maps.Marker({
+        position: garneau,
+        map: map,
+      });
+    }
+    window.initMap = initMap;
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/Logo-W.png" alt="LOGO"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Accueil</a>
+            <a class="nav-link" href="about.html">À propos</a>
+            <a class="nav-link" href="projects.html">Mes Projets</a>
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <nav class="mt-2" aria-label="breadcrumb">
+      <ol class="breadcrumb mx-2">
+        <li class="breadcrumb-item"><a class="text-success" href="index.html">Accueil</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </nav>
+    <h1 class="text-success text-center mt-5 mb-5 fs-3">Contact</h1>
+    <div class="m-auto text-center d-flex justify-content-between max-width-600px">
+      <a class="mx-3" href="#" target="_blank"><img class="w-50px" src="assets/facebook.png" alt="Facebook"></a>
+      <a class="mx-3" href="#" target="_blank"><img class="w-50px" src="assets/twitter.png" alt="Twitter"></a>
+      <a class="mx-3" href="#" target="_blank"><img class="w-50px" src="assets/linkedin.png" alt="Linkedin"></a>
+    </div>
+    <p class="text-center m-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, quos?</p>
+    <div class="m-auto max-width-90 w-600px">
+      <form action="#">
+        <div class="mb-3">
+          <input type="email" class="form-control" id="email" name="email"
+            placeholder="Entrez votre courriel: nom@example.com" required>
+        </div>
+        <div class="mb-4">
+          <textarea class="form-control" id="Message" rows="3" name="Message"
+            placeholder="Entrez votre message" required></textarea>
+        </div>
+        <div class="mb-5">
+          <button class="btn btn-success w-100" type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClMtBGjMHidncOXORUpfugXNminL6Kp-s&callback=initMap&v=weekly"
+      defer>
+      </script>
+    <div id="map" class="m-auto mt-5 mb-5"></div>
+  </main>
+  <footer class="text-bg-success">
+    <p class="m-0 p-2 text-center text-dark">2023</p>
+  </footer>
+</body>
+
+</html>
