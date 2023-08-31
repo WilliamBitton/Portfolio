@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Journal</title>
+    <title>Webflix</title>
 </head>
 
 <body>
@@ -25,7 +25,8 @@
                     <div class="navbar-nav">
                         <a class="nav-link" href="index.html">Accueil</a>
                         <a class="nav-link" href="about.html">À propos</a>
-                        <a class="nav-link active" aria-current="page" href="projects.html">Mes Projets</a>
+                        <a class="nav-link" href="projects.html">Projets</a>
+                        <a class="nav-link active" aria-current="page" href="maquettes.html">Maquettes</a>
                         <a class="nav-link" href="contact.html">Contact</a>
                     </div>
                 </div>
@@ -34,8 +35,8 @@
     </header>
 
     <main>
-        <div style="width: 90%; margin: 30px auto;">
-            <h1 style="text-align: center; margin: 30px;">Journal</h1>
+        <div class="mx-auto" style="width: 80%;">
+            <h1 class="text-center mb-4">Journal</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
                 alias. Reprehenderit, doloribus dolor
                 facilis eligendi mollitia nihil doloremque vero aut eius exercitationem officiis error incidunt sequi
@@ -45,32 +46,32 @@
             </p>
 
             <div id="carousel" class="carousel slide m-5">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="max-height: 90vh; overflow-y: auto;">
                     <div class="carousel-item active">
-                        <img src="./assets/Figma/Webflix/Webflix1.jpg" class="d-block w-75 m-auto border border-dark"
+                        <img src="./assets/Figma/Webflix/Webflix1.jpg" class="d-block w-100 m-auto border border-dark"
                             alt="Image journal 1">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/Figma/Webflix/Webflix2.jpg" class="d-block w-75 m-auto border border-dark"
+                        <img src="./assets/Figma/Webflix/Webflix2.jpg" class="d-block w-100 m-auto border border-dark"
                             alt="Image journal 2">
                     </div>
                 </div>
-                <button class="carousel-control-prev h-100" type="button" data-bs-target="#carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon text-bg-success rounded h-100" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next h-100" type="button" data-bs-target="#carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon text-bg-success rounded h-100" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <button class="carousel-control-prev h-100" style="transform: translateX(-120%); width: 50px;" type="button" data-bs-target="#carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon p-4 text-bg-secondary rounded" aria-hidden="true"></span>
+                <span class="visually-hidden ">Previous</span>
+            </button>
+            <button class="carousel-control-next h-100" style="transform: translateX(120%); width: 50px;" type="button" data-bs-target="#carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon p-4 text-bg-secondary rounded" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
             </div>
         </div>
     </main>
 
-    <footer class="text-bg-success">
-        <p class="m-0 p-2 text-center text-dark">2023</p>
+    <footer class="bg-body-tertiary">
+        <p class="m-0 p-2 text-center text-dark">William Bitton 2023, tous droits réservés</p>
     </footer>
     <script src="js/bootstrap.min.js"></script>
 </body>
