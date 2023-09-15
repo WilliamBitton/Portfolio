@@ -14,7 +14,7 @@
     transition-duration: 0.3s;
 }
 
-.hover:hover {
+.hover:hover, .hover-clicked {
     opacity: 1;
     backdrop-filter: blur(15px);
 }
