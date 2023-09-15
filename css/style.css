@@ -2,33 +2,27 @@
     font-family: 'Playfair Display', Times, serif;
 }
 
-#map {
-    max-width: 90%;
-    width: 600px;
-    height: 300px;
+.hover {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
 }
 
-.w-18rem {
-    width: 18rem;
+.hover:hover {
+    opacity: 1;
+    backdrop-filter: blur(15px);
 }
 
-.wh-230px {
-    width: 230px;
-    height: 230px;
+.hover-clicked{
+    transform: scale(1);
+    opacity: 1;
 }
 
-.max-width-600px {
-    max-width: 600px;
-}
-
-.max-width-90 {
-    max-width: 90%;
-}
-
-.w-50px {
-    width: 50px;
-}
-
-.w-600px {
-    width: 600px;
+img {
+    object-fit: cover;
 }
