@@ -15,12 +15,19 @@
     height: 100%;
     text-align: center;
     border-radius: 5px;
-    transform: scale(0.5);
     transition-duration: 0.3s;
 }
 
 .card-body:hover {
     opacity: 1;
+}
+
+.card-body div {
+    transform: scale(0.5);
+    transition-duration: 0.3s;
+}
+
+.card-body:hover div {
     transform: scale(1);
 }
 
