@@ -2,8 +2,37 @@
     font-family: 'Playfair Display', Times, serif;
 }
 
-body {
-    overflow-x: hidden;
+p, h1, h2 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text-container {
+    background-color: green;
+    padding: 100px 0 100px 0;
+    margin-bottom: -75px;
+    width: 100%;
+}
+
+.flex-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.icon-container {
+    height: 200px;
+    width: 300px;
+    margin: 0 auto
+}
+
+.card {
+    opacity: 0;
+    transition-duration: 0.7s;
+    width: 300px;
+    height: 200px;
+    max-width: 400px;
 }
 
 .card img {
@@ -39,11 +68,6 @@ body {
     filter: blur(15px);
 }
 
-.card {
-    opacity: 0;
-    transition-duration: 1s;
-}
-
 .card-active-1 {
     transition-delay: 1.5s;
     opacity: 1;
@@ -65,6 +89,11 @@ body {
     transform: translateX(0%) !important;
 }
 
+.handle-toggler {
+    margin-top: 200px;
+    transition-delay: 0s;
+}
+
 #home,
 #about,
 #wireframes,
@@ -73,9 +102,9 @@ body {
     opacity: 0;
     transition-duration: 1s;
     transform: translateX(-100%);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
 }
 
-.handleToggler {
-    margin-top: 200px;
-    transition-delay: 0s;
-}
