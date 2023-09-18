@@ -3,8 +3,7 @@
 }
 
 body {
-    overflow-x: hidden !important;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .card img {
