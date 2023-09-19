@@ -1,16 +1,22 @@
 * {
-    font-family: 'Playfair Display', Times, serif;
+    font-family: 'Comfortaa', Arial, sans-serif;
 }
 
-p, h1, h2 {
+header a:hover {
+    font-style:italic ;
+    transform: scale(1.1);
+}
+
+p,
+h1,
+h2 {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .text-container {
-    background-color: green;
+    background-color: rgb(247, 129, 3);
     padding: 100px 0 100px 0;
     margin-bottom: -75px;
     width: 100%;
@@ -22,7 +28,7 @@ p, h1, h2 {
 }
 
 .icon-container {
-    height: 200px;
+    height: 250px;
     width: 300px;
     margin: 0 auto
 }
@@ -31,12 +37,14 @@ p, h1, h2 {
     opacity: 0;
     transition-duration: 0.7s;
     width: 300px;
-    height: 200px;
+    height: 250px;
     max-width: 400px;
+    transform: scale(0.5);
 }
 
 .card img {
     object-fit: cover;
+    padding: 50px;
 }
 
 .card-body {
@@ -69,42 +77,63 @@ p, h1, h2 {
 }
 
 .card-active-1 {
-    transition-delay: 1.5s;
+    transition-delay: 0s;
     opacity: 1;
+    transform: scale(1);
 }
 
 .card-active-2 {
-    transition-delay: 1.75s;
+    transition-delay: 0.25s;
     opacity: 1;
+    transform: scale(1);
 }
 
 .card-active-3 {
-    transition-delay: 2s;
+    transition-delay: 0.5s;
     opacity: 1;
+    transform: scale(1);
 }
 
 .menu-active {
-    transition-delay: 0.8s;
     opacity: 1 !important;
-    transform: translateX(0%) !important;
+    transform: translate(0%) !important;
 }
 
-.handle-toggler {
-    margin-top: 200px;
-    transition-delay: 0s;
+.button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    padding: 10px 17px 10px 17px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
 }
 
-#home,
+.button-close:hover {
+    border: 2px solid black;
+}
+
 #about,
 #wireframes,
 #projects,
 #contact {
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transform: translateX(-100%);
     position: absolute;
-    top: 60px;
+    top: 0;
     left: 0;
     width: 100%;
 }
 
+.z-index {
+    z-index: 1000;
+}
+
+.link-phone-size {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 30px;
+}
