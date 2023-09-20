@@ -132,6 +132,8 @@ h2 {
 
 .z-index {
     z-index: 1000;
+    font-style: italic;
+    transform: scale(1.1);
 }
 
 .link-phone-size {

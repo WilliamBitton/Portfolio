@@ -358,10 +358,10 @@
     function handleMenu(e) {
       e.preventDefault()
       const href = e.currentTarget.getAttribute("href")
+      document.getElementById(href + "-link").classList.toggle("z-index")
+      document.getElementById(href).classList.toggle("menu-active")
       document.querySelector("footer").classList.toggle("display-none")
       document.getElementById("home").classList.toggle("display-none")
-      document.getElementById(href).classList.toggle("menu-active")
-      document.getElementById(href + "-link").classList.toggle("z-index")
       document.querySelector(".navbar-collapse").classList.remove("show")
       document.querySelectorAll(".card").forEach(card => {
         card.classList.remove("card-active-1")
