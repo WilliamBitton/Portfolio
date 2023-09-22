@@ -2,81 +2,115 @@
     font-family: 'Comfortaa', Arial, sans-serif;
 }
 
-header a:hover {
+html,
+body {
+    background-color: rgb(240, 243, 255);
+}
+
+nav {
+    max-width: 1344px;
+    margin: 0 auto;
+}
+
+.nav-link:hover {
+    cursor: pointer;
     font-style: italic;
     transform: scale(1.1);
+    color: rgb(70, 107, 255);
 }
 
-p,
 h1,
-h2 {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+.nav-link {
+    font-family: 'Croissant One', Arial, sans-serif;
 }
 
-.text-container {
-    background-color: rgb(247, 129, 3);
-    padding: 100px 0 100px 0;
-    margin-bottom: -75px;
+.text-container,
+footer {
     width: 100%;
+    color: white;
+    background-color: rgb(70, 107, 255);
 }
 
-.flex-container {
-    max-width: 1200px;
+footer div {
+max-width: 600px;
+margin: 0 auto;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer div a {
+border-radius: 100%;
+padding: 15px;
+transition-duration: 1s;
+}
+
+footer a:hover {
+    transform: scale(1.1) translateY(-10%) rotate(360deg);
+}
+
+.center-max-width {
+    max-width: 1344px;
+    width: 90%;
     margin: 0 auto;
-}
-
-.icon-container {
-    height: 250px;
-    width: 300px;
-    margin: 0 auto
 }
 
 .card {
-    width: 300px;
-    height: 250px;
-    max-width: 400px;
+    max-width: 300px;
+    box-shadow: 0 0 30px rgba(167, 161, 255, 0.409) !important;
+    border: none;
+    transition-duration: 0.3s;
 }
 
-.card-animation {
-    opacity: 0;
-    transition-duration: 0.7s;
-    transform: scale(0.5);
+.card:hover {
+    transform: translateY(-10%) scale(1.1);
 }
 
 .card img {
     object-fit: cover;
-    padding: 50px;
+    border-radius: 5px 5px 0 0;
+    height: 200px;
+    width: 300px;
+    margin: 0 auto
 }
 
-.card-body {
+/* @keyframes slideUpDown {
+
+    0%,
+    100% {
+        transform: translateY(10%);
+    }
+
+    50% {
+        transform: translateY(-10%);
+    }
+}
+
+.card-animation {
+    animation: slideUpDown 2s ease-in-out infinite;
+}
+
+.card-animation2 {
+    animation: slideUpDown 2s ease-in-out infinite;
+    animation-delay: 0.66s;
+}
+
+.card-animation3 {
+    animation: slideUpDown 2s ease-in-out infinite;
+    animation-delay: 1.25s;
+}
+
+.card-animation:hover,
+.card-animation2:hover,
+.card-animation3:hover {
+    animation-play-state: paused;
+} */
+
+/* .card-animation {
     opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    border-radius: 5px;
-    transition-duration: 0.3s;
-}
-
-.card-body:hover {
-    opacity: 1;
-}
-
-.card-body div {
+    transition-duration: 0.7s;
     transform: scale(0.5);
-    transition-duration: 0.3s;
-}
-
-.card-body:hover div {
-    transform: scale(1);
-}
-
-.card:hover img {
-    filter: blur(15px);
 }
 
 .card-active-1 {
@@ -95,32 +129,30 @@ h2 {
     transition-delay: 0.5s;
     opacity: 1;
     transform: scale(1);
-}
-
-.menu-active {
-    opacity: 1 !important;
-    transform: translate(0%) !important;
-}
+} */
 
 .button-close {
     position: absolute;
     top: 0;
     right: 0;
     margin: 10px;
-    padding: 10px 17px 10px 17px;
-    background-color: white;
+    padding: 8px 13px 8px 13px;
+    background-color: rgb(240, 243, 255);
     border-radius: 10px;
     border: none;
 }
 
 .button-close:hover {
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
-#about,
-#wireframes,
-#projects,
-#contact {
+.home-height {
+    min-height: 500px;
+}
+
+#Wireframes,
+#Projects,
+#Contact {
     opacity: 0;
     transition-duration: 0.5s;
     transform: translateX(-100%);
@@ -128,27 +160,38 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: rgb(70, 107, 255);
+    min-height: 100vh;
+}
+
+.menu-active {
+    opacity: 1 !important;
+    transform: translateX(0%) !important;
+}
+
+.display-none {
+    display: none;
 }
 
 .z-index {
     z-index: 1000;
     font-style: italic;
     transform: scale(1.1);
+    color: white !important;
 }
 
-.link-phone-size {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 20px;
-}
-
-@media screen and (min-width: 992px) {
-    .display-none {
+@media screen and (max-width: 599px) {
+    .display-none-media-logo {
         display: none;
     }
 }
 
-footer {
-    background-color: rgb(247, 129, 3);
+@media screen and (min-width: 600px) {
+    .opacity-media {
+        opacity: 0;
+    }
+}
+
+.logo img {
+    padding-top: 400px;
 }
