@@ -17,7 +17,7 @@
       <div class="container-fluid px-1">
         <a class="navbar-brand z-index display-none-media-logo px-4" href="index.html"><img src="assets/logo.png"
             alt="LOGO"></a>
-        <div class="navbar-nav border-bottom me-5">
+        <div class="navbar-nav border-bottom">
           <button class="nav-link event-listener fs-5" id="WireframesLink" name="Wireframes">Maquettes</button>
           <button class="nav-link event-listener fs-5" id="ProjectsLink" name="Projects">Projets</button>
           <button class="nav-link event-listener fs-5" id="ContactLink" name="Contact">Contact</button>
@@ -62,33 +62,37 @@
         </div>
 
         <div class="d-flex flex-wrap justify-content-evenly center-max-width mb-5">
-          <button class="card m-2 p-0" data-bs-toggle="modal" data-bs-target="#Modal" data-title="Jeu de mémoire"
-            data-content="Test content jeu de mémoire" data-image="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg"
-            data-link="./projects/cardGame/index.html">
+          <button class="card m-2 p-0 card-active-1" data-bs-toggle="modal" data-bs-target="#Modal"
+            data-title="Jeu de mémoire" data-content="Test content jeu de mémoire"
+            data-image="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg" data-link="./projects/cardGame/index.html">
             <img src="./assets/cards.png" class="card-img" alt="Image">
             <div class="card-body">
               <p class="card-title">Jeu de mémoire</p>
               <p class="card-text">Jeu de mémoire avec des cartes de 1 à 10.</p>
             </div>
+            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
           </button>
-          <button class="card m-2 p-0" href="https://snippet-o8zu.onrender.com" target="_blank" data-bs-toggle="modal"
-            data-bs-target="#Modal" data-title="Site de snippet" data-content="Test content snippet"
-            data-image="./assets/snippet.png" data-link="https://snippet-o8zu.onrender.com">
+          <button class="card m-2 p-0 card-active-2" href="https://snippet-o8zu.onrender.com" target="_blank"
+            data-bs-toggle="modal" data-bs-target="#Modal" data-title="Site de snippet"
+            data-content="Test content snippet" data-image="./assets/snippet.png"
+            data-link="https://snippet-o8zu.onrender.com">
             <img src="./assets/postit.png" class="card-img" alt="Image">
             <div class="card-body">
-              <p class="card-title">Snippet</p>
-              <p class="card-title">Site snippet</p>
+              <p class="card-title text-left">Snippet</p>
+              <p class="card-text">Site snippet</p>
             </div>
+            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
           </button>
-          <button class="card m-2 p-0" href="https://game-store-react-next.vercel.app" target="_blank"
+          <button class="card m-2 p-0 card-active-3" href="https://game-store-react-next.vercel.app" target="_blank"
             data-bs-toggle="modal" data-bs-target="#Modal" data-title="Inventaire grid"
             data-content="Test content jouets" data-image="./assets/gameStore.png"
             data-link="https://game-store-react-next.vercel.app">
             <img src="./assets/soccer.png" class="card-img" alt="Image">
-            <div class="card-body">
+            <div class="card-body me-2">
               <p class="card-title">Inventaire magasin de jouets</p>
-              <p class="card-title">Interface pour API node js</p>
+              <p class="card-text">Interface pour API node js</p>
             </div>
+            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
           </button>
         </div>
 
@@ -128,7 +132,10 @@
     </div>
 
     <div id="Wireframes">
-      <button class="button-close event-listener" name="Wireframes">X</button>
+      <div class="button-close-container">
+        <button class="button-close event-listener margin-right-media" name="Wireframes"><img src="./assets/arrow.svg"
+            alt="X" width="40px"></button>
+      </div>
       <div class="text-container text-center pt-5">
         <h3 class="center-max-width fs-5 pb-3 mt-5 pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
           Possimus,
@@ -137,7 +144,10 @@
     </div>
 
     <div id="Projects">
-      <button class="button-close event-listener" name="Projects">X</button>
+      <div class="button-close-container">
+        <button class="button-close event-listener margin-right-media" name="Projects"><img src="./assets/arrow.svg"
+            alt="X" width="40px"></button>
+      </div>
       <div class="text-container text-center pt-5">
         <h3 class="center-max-width fs-5 pb-3 mt-5 pt-5">Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Rem quisquam est ad voluptate ab illum, perspiciatis
@@ -146,7 +156,10 @@
     </div>
 
     <div id="Contact">
-      <button class="button-close event-listener" name="Contact">X</button>
+      <div class="button-close-container">
+        <button class="button-close event-listener margin-right-media" name="Contact"><img src="./assets/arrow.svg"
+            alt="X" width="40px"></button>
+      </div>
       <div class="text-container text-center pt-5">
         <h3 class="center-max-width fs-5 pb-3 mt-5 pt-5">Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Rem quisquam est ad voluptate ab illum, perspiciatis
