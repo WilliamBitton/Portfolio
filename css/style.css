@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
 }
 
+main {
+    margin-top: 100vh;
+}
+
 nav {
     max-width: 1344px;
     margin: 0 auto;
@@ -121,17 +125,17 @@ footer a:hover {
     }
 }
 
-.home-height .text-container:hover+div .card-active-1 {
+.text-container:hover+div .card-active-1 {
     animation: translateScale 0.5s ease-in-out;
     animation-delay: 0s;
 }
 
-.home-height .text-container:hover+div .card-active-2 {
+.text-container:hover+div .card-active-2 {
     animation: translateScale 0.5s ease-in-out;
     animation-delay: 0.15s;
 }
 
-.home-height .text-container:hover+div .card-active-3 {
+.text-container:hover+div .card-active-3 {
     animation: translateScale 0.5s ease-in-out;
     animation-delay: 0.3s;
 }
@@ -157,10 +161,6 @@ footer a:hover {
 
 .button-close:hover {
     transform: rotate(360deg) scale(1.1);
-}
-
-.home-height {
-    min-height: 800px;
 }
 
 #Wireframes,
