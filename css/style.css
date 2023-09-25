@@ -7,6 +7,11 @@ body {
     background-color: rgb(240, 243, 255);
 }
 
+body {
+    background-image: url('../assets/home.svg');
+    background-repeat: no-repeat;
+}
+
 nav {
     max-width: 1344px;
     margin: 0 auto;
@@ -154,7 +159,7 @@ footer a:hover {
 }
 
 .home-height {
-    min-height: 600px;
+    min-height: 800px;
 }
 
 #Wireframes,
@@ -194,10 +199,6 @@ footer a:hover {
 }
 
 @media screen and (min-width: 600px) {
-    .opacity-media {
-        opacity: 0;
-    }
-
     .margin-right-media {
         margin-right: 20px;
     }
@@ -205,4 +206,8 @@ footer a:hover {
 
 .logo img {
     padding-top: 400px;
+}
+
+body {
+    background-image: url('../assets/home.svg');
 }
