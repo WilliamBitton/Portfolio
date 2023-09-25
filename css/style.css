@@ -7,13 +7,10 @@ body {
     background-color: rgb(240, 243, 255);
 }
 
-body {
+#BackgroundImage {
     background-image: url('../assets/home.svg');
     background-repeat: no-repeat;
-}
-
-main {
-    margin-top: 100vh;
+    padding-top: 100vh;
 }
 
 nav {
@@ -203,12 +200,4 @@ footer a:hover {
     .margin-right-media {
         margin-right: 20px;
     }
-}
-
-.logo img {
-    padding-top: 400px;
-}
-
-body {
-    background-image: url('../assets/home.svg');
 }
