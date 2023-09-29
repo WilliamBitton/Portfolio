@@ -25,6 +25,7 @@ nav {
 }
 
 h1,
+h4,
 .nav-link,
 .card-title {
     font-family: 'Croissant One', Arial, sans-serif;
@@ -79,10 +80,17 @@ footer a:hover {
     box-shadow: 0 0 20px rgba(167, 161, 255, 0.409) !important;
 }
 
-.card-img {
+.card-button-img {
     object-fit: cover;
     height: 100px;
     width: 150px;
+    padding: 15px;
+}
+
+.card-svg {
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
     padding: 15px;
 }
 
