@@ -47,10 +47,9 @@ p {
 }
 
 h1,
-h2,
-.skills-list {
-    width: 800px;
-    max-width: 90%;
+h2 {
+    max-width: 800px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -171,9 +170,15 @@ footer a:hover {
     width: 400px;
 }
 
+.skills-list {
+    width: 815px;
+    max-width: 94%;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 950px) {
     .text-container {
-        width: 800px;
+        width: 786px;
     }
 }
 
