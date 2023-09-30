@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Croissant One';
+    src: url('../font/CroissantOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa-Regular.ttf') format('truetype');
+}
+
 * {
     font-family: 'Comfortaa', Arial, sans-serif;
 }
@@ -36,7 +46,9 @@ p {
     font-size: small;
 }
 
-h1, h2 {
+h1,
+h2,
+.skills-list {
     width: 800px;
     max-width: 90%;
     margin: 0 auto;
