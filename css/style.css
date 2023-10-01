@@ -198,10 +198,10 @@ footer a:hover {
 }
 
 .test {
-  
+
     opacity: 0;
     z-index: -5000 !important;
-    transform: translateY(-50%);
+    height: 0 !important;
 }
 
 #t {
@@ -209,15 +209,18 @@ footer a:hover {
     z-index: 5000;
 }
 
-#Dev-skills-hid, #Programmes-skills-hid, #Design-skills-hid {
+#Dev-skills-hid,
+#Programmes-skills-hid,
+#Design-skills-hid {
     z-index: 5000;
     width: 375px;
-   transition-duration: 0.5s;
+    height: 300px;
+    transition-duration: 0.5s;
 }
 
 .testP {
     opacity: 0;
-    transform: translateY(-50%) ;
+    transform: translateY(50%);
 }
 
 .t1 {
