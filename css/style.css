@@ -48,9 +48,17 @@ p {
 
 h1,
 h2 {
-    max-width: 800px;
+    max-width: 816px;
     width: 90%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 917px) {
+
+    h1,
+    h2 {
+        max-width: 400px;
+    }
 }
 
 footer {
@@ -60,8 +68,7 @@ footer {
 }
 
 footer div {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 400px;
 }
 
 footer p {
@@ -190,7 +197,7 @@ footer a:hover {
     min-height: 100vh;
 }
 
-/* .test {
+.test {
   
     opacity: 0;
     z-index: -5000 !important;
@@ -201,7 +208,7 @@ footer a:hover {
     z-index: 5000;
 }
 
-#test-1, #test-2, #test-3 {
+#Dev-skills-hid, #Programmes-skills-hid, #Design-skills-hid {
     z-index: 5000;
     width: 375px;
 }
@@ -211,11 +218,11 @@ footer a:hover {
 }
 
 .t1 {
-    transition-delay: 0.5s;
+    transition-delay: 0.3s;
 }
 
 .t2 {
-    transition-delay: 0.6s;
+    transition-delay: 0.5s;
 }
 
 .t3 {
@@ -223,13 +230,13 @@ footer a:hover {
 }
 
 .t4 {
-    transition-delay: 0.8s;
+    transition-delay: 0.9s;
 }
 
 .t5 {
-    transition-delay: 0.9s;
+    transition-delay: 0.11s;
 }
 
 .t6 {
     transition-delay: 1s;
-} */
+}
