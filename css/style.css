@@ -200,12 +200,12 @@ footer a:hover {
 .test {
 
     opacity: 0;
-    z-index: -5000 !important;
+    z-index: -1 !important;
     height: 0 !important;
 }
 
 #t {
-    transition-duration: 0.5s;
+    transition-duration: 1s;
     z-index: 5000;
 }
 
@@ -220,19 +220,18 @@ footer a:hover {
 
 .testP {
     opacity: 0;
-    transform: translateY(50%);
 }
 
 .t1 {
-    transition-delay: 0.3s;
+    transition-delay: 0s;
 }
 
 .t2 {
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
 }
 
 .t3 {
-    transition-delay: 0.7s;
+    transition-delay: 0.4s;
 }
 
 .t4 {
