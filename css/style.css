@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -39,16 +39,22 @@ h2,
 .nav-link,
 .card-title {
     font-family: 'Croissant One', Arial, sans-serif;
+    font-size: large;
 }
 
 p {
-    font-size: small;
+    font-size: large;
 }
 
 footer {
-    width: 100%;
+    padding-top: 100px;
+    max-width: 1920px;
+    margin: 0 auto;
     color: white;
-    background-color: rgb(70, 107, 255);
+    background-image: url(../assets/footer-svg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
 
 footer div {
@@ -70,7 +76,7 @@ footer a:hover {
 }
 
 .card {
-    max-width: 400px;
+    max-width: 608px;
     box-shadow: 0 0 10px rgba(167, 161, 255, 0.409);
     border: none;
     transition-duration: 0.3s;
@@ -114,7 +120,7 @@ footer a:hover {
 
 .button-close-container {
     position: relative;
-    max-width: 1280px;
+    max-width: 1920px;
     width: 100%;
     margin: 0 auto;
 }
@@ -147,8 +153,18 @@ footer a:hover {
     color: white !important;
 }
 
-.w-400 {
+.w-608 {
+    width: 608px;
+}
+
+.w-400-badge {
     width: 400px;
+}
+
+.center-1920 {
+    max-width: 1920px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .center-1280 {
@@ -157,16 +173,141 @@ footer a:hover {
     margin: 0 auto;
 }
 
-.center-816 {
-    max-width: 816px;
+.center-1232 {
+    max-width: 1236px;
     width: 87%;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 917px) {
+@media screen and (max-width: 1386px) {
+    .center-1232 {
+        max-width: 1016px;
+    }
 
-    .center-816 {
+    h1,
+    h2,
+    .nav-link,
+    .card-title {
+        font-size: medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+    .w-608 {
+        width: 500px;
+    }
+
+    .w-400-badge {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1146px) {
+    .center-1232 {
+        max-width: 816px;
+    }
+
+    h1,
+    h2,
+    .nav-link,
+    .card-title {
+        font-size: medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .card {
         max-width: 400px;
+    }
+
+    .w-608, .w-400-badge {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 924px) {
+
+    .center-1232 {
+        max-width: 600px;
+    }
+
+    h1,
+    h2,
+    .nav-link,
+    .card-title {
+        font-size: medium;
+    }
+
+    p {
+        font-size: medium;
+    }
+
+    .card {
+        max-width: 600px;
+    }
+
+    .w-608, .w-400-badge {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .center-1232 {
+        max-width: 500px;
+    }
+
+    h1,
+    h2,
+    .nav-link,
+    .card-title {
+        font-size: small;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+    .w-608, .w-400-badge {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .center-1232 {
+        max-width: 400px;
+    }
+
+    h1,
+    h2,
+    .nav-link,
+    .card-title {
+        font-size: small;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .card {
+        max-width: 400px;
+    }
+
+    .w-608, .w-400-badge {
+        width: 400px;
     }
 }
 
@@ -193,52 +334,3 @@ footer a:hover {
     background-color: rgb(70, 107, 255);
     min-height: 100vh;
 }
-
-/* .test {
-
-    opacity: 0;
-    z-index: -1 !important;
-    height: 0 !important;
-}
-
-#t {
-    transition-duration: 1s;
-    z-index: 5000;
-}
-
-#Dev-skills-hid,
-#Outils-skills-hid,
-#Design-skills-hid {
-    z-index: 5000;
-    width: 375px;
-    height: 300px;
-    transition-duration: 0.5s;
-}
-
-.testP {
-    opacity: 0;
-}
-
-.t1 {
-    transition-delay: 0s;
-}
-
-.t2 {
-    transition-delay: 0.2s;
-}
-
-.t3 {
-    transition-delay: 0.4s;
-}
-
-.t4 {
-    transition-delay: 0.9s;
-}
-
-.t5 {
-    transition-delay: 0.11s;
-}
-
-.t6 {
-    transition-delay: 1s;
-} */
