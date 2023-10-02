@@ -35,30 +35,14 @@ nav {
 }
 
 h1,
-h4,
+h2,
 .nav-link,
 .card-title {
     font-family: 'Croissant One', Arial, sans-serif;
 }
 
-h2,
 p {
     font-size: small;
-}
-
-h1,
-h2 {
-    max-width: 816px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 917px) {
-
-    h1,
-    h2 {
-        max-width: 400px;
-    }
 }
 
 footer {
@@ -163,14 +147,27 @@ footer a:hover {
     color: white !important;
 }
 
-.center-max-width {
+.w-400 {
+    width: 400px;
+}
+
+.center-1280 {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
 }
 
-.w-400 {
-    width: 400px;
+.center-816 {
+    max-width: 816px;
+    width: 87%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 917px) {
+
+    .center-816 {
+        max-width: 400px;
+    }
 }
 
 @media screen and (max-width: 599px) {
@@ -197,7 +194,7 @@ footer a:hover {
     min-height: 100vh;
 }
 
-.test {
+/* .test {
 
     opacity: 0;
     z-index: -1 !important;
@@ -210,7 +207,7 @@ footer a:hover {
 }
 
 #Dev-skills-hid,
-#Programmes-skills-hid,
+#Outils-skills-hid,
 #Design-skills-hid {
     z-index: 5000;
     width: 375px;
@@ -244,4 +241,4 @@ footer a:hover {
 
 .t6 {
     transition-delay: 1s;
-}
+} */
