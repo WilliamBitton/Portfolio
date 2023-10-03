@@ -13,10 +13,10 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand">
-      <div class="container-fluid px-1">
-        <a class="navbar-brand z-index display-none-media-logo px-4" href="/"><img src="./assets/logo.png"
-            alt="LOGO"></a>
+    <nav class="navbar navbar-expand pt-2">
+      <div class="container-fluid pt-0">
+        <a class="navbar-brand z-index display-none-media-logo ps-2 me-0" href="/"><img src="./assets/logo.svg"
+            alt="LOGO" width="40px"></a>
         <div class="navbar-nav border-bottom">
           <button class="nav-link event-listener" id="WireframesLink" name="Wireframes">Maquettes</button>
           <button class="nav-link event-listener" id="ProjectsLink" name="Projects">Projets</button>
@@ -28,88 +28,106 @@
   </header>
 
   <main>
-    <div class="center-1920"><img id="BackgroundImage" src="./assets/home.svg" alt="Home image"></div>
+    <h1 class="center-1232 text-center fs-1 p-5">SITE EN CONSTRUCTION</h1>
+
+    <div class="row center-1232 mt-5 mb-5 pb-5 align-items-center">
+      <div class="col-md-12 col-lg-5 col-xl-4 order-2 order-lg-1 p-0">
+        <h1 class="fs-1 mt-5" style="color: rgb(70, 107, 255);">BIENVENUE.</h1>
+        <p class="mt-4 fs-6 mb-0">
+          Développement web, front-end,
+        </p>
+        <p class="fs-6">back-end, design.</p>
+      </div>
+      <div class="col-md-12 col-lg-7 col-xl-8 order-1 order-lg-2 p-0"><img id="BackgroundImage" src="./assets/home.svg"
+          alt="Home image"></div>
+    </div>
 
     <div id="Home">
-      <h1 class="center-1232 text-center fs-1 p-5">SITE EN CONSTRUCTION</h1>
 
-      <h1 class="center-1232 mt-5">William Bitton</h1>
-      
-      <p class="center-1232 mt-4">
-        Actuellement étudiant en développement web à Québec, je suis à la recherche d'un stage pour compléter mon
-        cursus.
-        Vous trouverez ici un aperçu de mes travaux et réalisations scolaires. N'hésitez pas
-        à explorer et à me contacter si vous souhaitez m'offrir l'opportunité d'en apprendre davantage en
-        collaborant avec vous.
-      </p>
+      <div class="pos-rel-top mt-5 pt-4">
+        <img src="./assets/split.svg" alt="split">
+      </div>
+      <div class="blue pt-4 pb-4">
+        <h1 class="center-1232 pt-2">William Bitton</h1>
+        <p class="center-1232 mt-4 pe-5">
+          Actuellement étudiant en développement web à Québec, je suis à la recherche d'un stage pour compléter mon
+          cursus.
+          Vous trouverez ici un aperçu de mes travaux et réalisations scolaires. N'hésitez pas
+          à explorer et à me contacter si vous souhaitez m'offrir l'opportunité d'en apprendre davantage en
+          collaborant avec vous.
+        </p>
+      </div>
+      <div class="pos-rel-bottom mb-5 pb-5">
+        <img src="./assets/split2.svg" alt="split">
+      </div>
 
-      <h2 class="center-1232 mt-5">Compétences</h2>
+      <h2 class="center-1232 mt-5 pt-5">Compétences</h2>
 
-      <div class="d-flex flex-wrap mt-3 mb-5 justify-content-center center-1280">
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
-          <img src="./assets/filetype-html.svg" class="card-img card-svg flex-shrink-0" alt="Image">
-          <div class="card-body ps-1">
-            <p class="card-title mt-2">HTML & CSS & Javascript</p>
-          </div>
-        </badge>
-
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+      <div class="d-flex flex-wrap mt-3 mb-5 pb-5 justify-content-center center-1280">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/filetype-java.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">Java</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
-          <img src="./assets/ejs.svg" class="card-img card-svg flex-shrink-0" alt="Image">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
+          <img src="./assets/filetype-html.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
-            <p class="card-title mt-2">Node js & Express & Bootstrap</p>
+            <p class="card-title mt-2">HTML & CSS & Javascript</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/filetype-jsx.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">React & Next js & Material UI</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
+          <img src="./assets/ejs.svg" class="card-img card-svg flex-shrink-0" alt="Image">
+          <div class="card-body ps-1">
+            <p class="card-title mt-2">Node js & Express & Bootstrap</p>
+          </div>
+        </badge>
+
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/code-slash.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">Visual Code & Eclipse</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/git.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">Git & GitHub & GitLab</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/database.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">MongoDB Compass & Postman</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/figma.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">Figma</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/filetype-psd.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">Illustrator & Photoshop</p>
           </div>
         </badge>
 
-        <badge class="card m-2 p-0 flex-row text-start w-400-badge">
+        <badge class="card m-2 p-0 flex-row text-start w-400">
           <img src="./assets/after-effects.svg" class="card-img card-svg flex-shrink-0" alt="Image">
           <div class="card-body ps-1">
             <p class="card-title mt-2">After Effects & Première Pro</p>
@@ -117,51 +135,59 @@
         </badge>
       </div>
 
-      <div class="d-flex flex-wrap-reverse justify-content-center center-1920 mt-5 mb-5">
-        <div class="d-flex flex-column justify-content-center m-2 w-608">
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Webflix" data-content="Contenu description du site Webflix" data-image="./assets/webflix.jpg"
-            data-link="./assets/webflix.jpg">
-            <img src="./assets/webflix.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body">
-              <p class="card-title">Webflix</p>
-              <p class="card-text">Site de films et séries</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Loop" data-content="Contenu description du site fictif Loop de vente de lunettes"
-            data-image="./assets/loop.jpg" data-link="./assets/loop.jpg">
-            <img src="./assets/loop.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body">
-              <p class="card-title text-left">Loop</p>
-              <p class="card-text">Site de vente de lunettes</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Journal étudiant" data-content="Contenu description du site journal scolaire fictif"
-            data-image="./assets/journal.jpg" data-link="./assets/journal.jpg">
-            <img src="./assets/journal.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body me-2">
-              <p class="card-title">Journal étudiant</p>
-              <p class="card-text">Journal étudiant</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-        </div>
-        <div class="text-end m-2 ps-5 mb-3 w-608">
-          <h2 class="mt-5">
-            Maquettes</h2>
-          <p class="mt-5">
-            Ces maquettes de sites fictifs reflètent mes débuts dans le design web.
-            Mon objectif est de devenir capable de
-            créer des maquettes conformes aux normes UI/UX, alliant simplicité, dynamisme et intuitivité.
-          </p>
+      <div class="pos-rel-top mt-5 pt-5">
+        <img src="./assets/split.svg" alt="split">
+      </div>
+      <div class="blue pb-4">
+        <div class="d-flex flex-wrap-reverse justify-content-center center-1920 mt-0 mb-0">
+          <div class="d-flex flex-column justify-content-center m-2 w-608">
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Webflix" data-content="Contenu description du site Webflix" data-image="./assets/webflix.jpg"
+              data-link="./assets/webflix.jpg">
+              <img src="./assets/webflix.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body">
+                <p class="card-title">Webflix</p>
+                <p class="card-text">Site de films et séries</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Loop" data-content="Contenu description du site fictif Loop de vente de lunettes"
+              data-image="./assets/loop.jpg" data-link="./assets/loop.jpg">
+              <img src="./assets/loop.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body">
+                <p class="card-title text-left">Loop</p>
+                <p class="card-text">Site de vente de lunettes</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Journal étudiant" data-content="Contenu description du site journal scolaire fictif"
+              data-image="./assets/journal.jpg" data-link="./assets/journal.jpg">
+              <img src="./assets/journal.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body me-2">
+                <p class="card-title">Journal étudiant</p>
+                <p class="card-text">Journal étudiant</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+          </div>
+          <div class="text-end m-2 ps-5 mb-3 w-608">
+            <h2 class="mt-5">
+              Maquettes</h2>
+            <p class="mt-5">
+              Ces maquettes de sites fictifs reflètent mes débuts dans le design web.
+              Mon objectif est de devenir capable de
+              créer des maquettes conformes aux normes UI/UX, alliant simplicité, dynamisme et intuitivité.
+            </p>
+          </div>
         </div>
       </div>
+      <div class="pos-rel-bottom mb-5 pb-5">
+        <img src="./assets/split2.svg" alt="split">
+      </div>
 
-      <div class="d-flex flex-wrap justify-content-center center-1920 mt-5 mb-5">
+      <div class="d-flex flex-wrap justify-content-center center-1920 mt-5 pt-5 mb-5 pb-5">
         <div class="text-start m-2 pe-5 mb-3 w-608">
           <h2 class="mt-5">
             Projets</h2>
@@ -231,8 +257,8 @@
 
     <div id="Wireframes" class="menu-hidden">
       <div class="button-close-container">
-        <button class="button-close event-listener margin-right-media" name="Wireframes"><img src="./assets/arrow.svg"
-            alt="X" width="40px">
+        <button class="button-close event-listener" name="Wireframes"><img src="./assets/arrow.svg" alt="X"
+            width="40px">
         </button>
       </div>
 
@@ -269,7 +295,7 @@
             <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
           </button>
         </div>
-        <div class="text-end m-2 ps-5 mb-3 w-608">
+        <div class="text-start m-2 pe-5 mb-3 w-608">
           <h2 class="mt-5">
             Maquettes</h2>
           <p class="mt-5">
@@ -283,8 +309,7 @@
 
     <div id="Projects" class="menu-hidden">
       <div class="button-close-container">
-        <button class="button-close event-listener margin-right-media" name="Projects"><img src="./assets/arrow.svg"
-            alt="X" width="40px">
+        <button class="button-close event-listener" name="Projects"><img src="./assets/arrow.svg" alt="X" width="40px">
         </button>
       </div>
 
@@ -340,8 +365,7 @@
 
     <div id="Contact" class="menu-hidden">
       <div class="button-close-container">
-        <button class="button-close event-listener margin-right-media" name="Contact"><img src="./assets/arrow.svg"
-            alt="X" width="40px">
+        <button class="button-close event-listener" name="Contact"><img src="./assets/arrow.svg" alt="X" width="40px">
         </button>
       </div>
 
@@ -351,8 +375,11 @@
     <iframe src="https://tp3-vpic.onrender.com" frameborder="0" style="display: none;"></iframe>
   </main>
 
-  <footer class="text-center">
-    <div class="d-flex justify-content-between pt-3 mx-auto">
+  <div class="pos-rel-top mt-5 pt-5">
+    <img src="./assets/split.svg" alt="split">
+  </div>
+  <footer class="text-center blue pt-4">
+    <div class="d-flex justify-content-between p-3 mx-auto">
       <a href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img src="./assets/linkedin.svg"
           alt="linkedin icon" width="40px"></a>
       <a href="mailto:willbitton54@gmail.com"><img src="./assets/envelope.svg" alt="mail icon" width="40px"></a>
