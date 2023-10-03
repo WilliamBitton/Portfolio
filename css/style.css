@@ -224,6 +224,12 @@ footer a:hover {
     .w-400 {
         width: 500px;
     }
+
+    #Wireframes div.flex-wrap-reverse,
+    #Projects div.flex-wrap,
+    #Contact div.flex-wrap {
+        margin-top: 200px !important;
+    }
 }
 
 @media screen and (max-width: 1146px) {
@@ -258,6 +264,12 @@ footer a:hover {
     .w-608,
     .w-400 {
         width: 400px;
+    }
+
+    #Wireframes div.flex-wrap-reverse,
+    #Projects div.flex-wrap,
+    #Contact div.flex-wrap {
+        margin-top: 100px !important;
     }
 }
 
@@ -294,12 +306,19 @@ footer a:hover {
     .w-400 {
         width: 600px;
     }
+
+    #Wireframes div.flex-wrap-reverse,
+    #Projects div.flex-wrap,
+    #Contact div.flex-wrap {
+        margin-top: 10px !important;
+    }
 }
 
 @media screen and (max-width: 750px) {
 
     .navbar-nav {
         margin-right: 0;
+        margin-top: 3px;
     }
 
     .center-1232,
@@ -383,4 +402,10 @@ footer a:hover {
     width: 100%;
     background-color: rgb(70, 107, 255);
     min-height: 100vh;
+}
+
+#Wireframes div.flex-wrap-reverse,
+#Projects div.flex-wrap,
+#Contact div.d-flex {
+    margin-top: 300px;
 }
