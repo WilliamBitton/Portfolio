@@ -15,7 +15,7 @@
   <header>
     <nav class="navbar navbar-expand pt-2">
       <div class="container-fluid pt-0">
-        <a class="navbar-brand z-index display-none-media-logo ps-2 me-0" href="/"><img src="./assets/logo.svg"
+        <a class="navbar-brand z-index display-none-media-logo p-0 me-0" href="/"><img src="./assets/logo.svg"
             alt="LOGO" width="40px"></a>
         <div class="navbar-nav border-bottom">
           <button class="nav-link event-listener" id="WireframesLink" name="Wireframes">Maquettes</button>
@@ -44,10 +44,7 @@
 
     <div id="Home">
 
-      <div class="pos-rel-top mt-5 pt-4">
-        <img src="./assets/split.svg" alt="split">
-      </div>
-      <div class="blue pt-4 pb-4">
+      <div class="pt-5 pb-5 border-bottom">
         <h1 class="center-1232 pt-2">William Bitton</h1>
         <p class="center-1232 mt-4 pe-5">
           Actuellement étudiant en développement web à Québec, je suis à la recherche d'un stage pour compléter mon
@@ -56,9 +53,6 @@
           à explorer et à me contacter si vous souhaitez m'offrir l'opportunité d'en apprendre davantage en
           collaborant avec vous.
         </p>
-      </div>
-      <div class="pos-rel-bottom mb-5 pb-5">
-        <img src="./assets/split2.svg" alt="split">
       </div>
 
       <h2 class="center-1232 mt-5 pt-5">Compétences</h2>
@@ -235,6 +229,10 @@
           </button>
         </div>
       </div>
+
+      <div class="pos-rel-top mt-5 pt-5">
+        <img src="./assets/split.svg" alt="split">
+      </div>
     </div>
 
     <div id="Modal" class="modal fade" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
@@ -262,47 +260,49 @@
         </button>
       </div>
 
-      <div class="d-flex flex-wrap-reverse justify-content-center center-1920 mt-5 mb-5">
-        <div class="d-flex flex-column justify-content-center m-2 w-608">
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Webflix" data-content="Contenu description du site Webflix" data-image="./assets/webflix.jpg"
-            data-link="./assets/webflix.jpg">
-            <img src="./assets/webflix.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body">
-              <p class="card-title">Webflix</p>
-              <p class="card-text">Site de films et séries</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Loop" data-content="Contenu description du site fictif Loop de vente de lunettes"
-            data-image="./assets/loop.jpg" data-link="./assets/loop.jpg">
-            <img src="./assets/loop.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body">
-              <p class="card-title text-left">Loop</p>
-              <p class="card-text">Site de vente de lunettes</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Journal étudiant" data-content="Contenu description du site journal scolaire fictif"
-            data-image="./assets/journal.jpg" data-link="./assets/journal.jpg">
-            <img src="./assets/journal.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body me-2">
-              <p class="card-title">Journal étudiant</p>
-              <p class="card-text">Journal étudiant</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-          </button>
-        </div>
-        <div class="text-start m-2 pe-5 mb-3 w-608">
-          <h2 class="mt-5">
-            Maquettes</h2>
-          <p class="mt-5">
-            Ces maquettes de sites fictifs reflètent mes débuts dans le design web.
-            Mon objectif est de devenir capable de
-            créer des maquettes conformes aux normes UI/UX, alliant simplicité, dynamisme et intuitivité.
-          </p>
+      <div class="row" style="min-height: 100vh;">
+        <div class="d-flex flex-wrap-reverse justify-content-center center-1920 mb-5 pt-5 align-items-center">
+          <div class="d-flex flex-column justify-content-center m-2 w-608">
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Webflix" data-content="Contenu description du site Webflix" data-image="./assets/webflix.jpg"
+              data-link="./assets/webflix.jpg">
+              <img src="./assets/webflix.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body">
+                <p class="card-title">Webflix</p>
+                <p class="card-text">Site de films et séries</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Loop" data-content="Contenu description du site fictif Loop de vente de lunettes"
+              data-image="./assets/loop.jpg" data-link="./assets/loop.jpg">
+              <img src="./assets/loop.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body">
+                <p class="card-title text-left">Loop</p>
+                <p class="card-text">Site de vente de lunettes</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Journal étudiant" data-content="Contenu description du site journal scolaire fictif"
+              data-image="./assets/journal.jpg" data-link="./assets/journal.jpg">
+              <img src="./assets/journal.jpg" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body me-2">
+                <p class="card-title">Journal étudiant</p>
+                <p class="card-text">Journal étudiant</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
+            </button>
+          </div>
+          <div class="text-end m-2 pe-5 mb-3 w-608 blue">
+            <h2 class="mt-5">
+              Maquettes</h2>
+            <p class="mt-5">
+              Ces maquettes de sites fictifs reflètent mes débuts dans le design web.
+              Mon objectif est de devenir capable de
+              créer des maquettes conformes aux normes UI/UX, alliant simplicité, dynamisme et intuitivité.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -313,54 +313,58 @@
         </button>
       </div>
 
-      <div class="d-flex flex-wrap justify-content-center center-1920 mt-5 mb-5">
-        <div class="text-start m-2 pe-5 mb-3 w-608">
-          <h2 class="mt-5">
-            Projets</h2>
-          <p class="mt-5">
-            Voici trois projets qui ont été une opportunité d'acquérir de nouvelles compétences, que ce soit en
-            front-end ou en back-end.
-          </p>
-          <p>
-            Ces projets sont hébergés gratuitement sur le site render.com, les serveurs peuvent prendre quelques minutes
-            à
-            démarrer à la première visite du site.
-          </p>
-        </div>
-        <div class="d-flex flex-column justify-content-center m-2 w-608">
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Jeu de mémoire" data-content="Test content jeu de mémoire"
-            data-image="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg" data-link="./projects/cardGame/index.html">
-            <img src="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg" class="card-img card-button-img flex-shrink-0"
-              alt="Image">
-            <div class="card-body">
-              <p class="card-title">Jeu de mémoire</p>
-              <p class="card-text">HTML & Javascript & CSS</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Site de snippet" data-content="Test content snippet" data-image="./assets/snippet.png"
-            data-link="https://snippet-o8zu.onrender.com">
-            <img src="./assets/snippet.png" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body">
-              <p class="card-title text-left">Snippet</p>
-              <p class="card-text">Node Js & Express & EJS</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-          </button>
-          <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
-            data-title="Inventaire grid" data-content="Test content jouets" data-image="./assets/gameStore.png"
-            data-link="https://game-store-react-next.vercel.app">
-            <img src="./assets/gameStore.png" class="card-img card-button-img flex-shrink-0" alt="Image">
-            <div class="card-body me-2">
-              <p class="card-title">Magasin de jouets</p>
-              <p class="card-text">React & Next & Material UI</p>
-            </div>
-            <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-          </button>
+      <div class="row" style="min-height: 100vh;">
+        <div class="d-flex flex-wrap justify-content-center center-1920 mb-5 pt-5 align-items-center">
+          <div class="text-start m-2 pe-5 mb-3 w-608 blue">
+            <h2 class="mt-5">
+              Projets</h2>
+            <p class="mt-5">
+              Voici trois projets qui ont été une opportunité d'acquérir de nouvelles compétences, que ce soit en
+              front-end ou en back-end.
+            </p>
+            <p>
+              Ces projets sont hébergés gratuitement sur le site render.com, les serveurs peuvent prendre quelques
+              minutes
+              à
+              démarrer à la première visite du site.
+            </p>
+          </div>
+          <div class="d-flex flex-column justify-content-center m-2 w-608">
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Jeu de mémoire" data-content="Test content jeu de mémoire"
+              data-image="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg" data-link="./projects/cardGame/index.html">
+              <img src="./assets/nick-fewings-q2VwjLMwt9g-unsplash.jpg" class="card-img card-button-img flex-shrink-0"
+                alt="Image">
+              <div class="card-body">
+                <p class="card-title">Jeu de mémoire</p>
+                <p class="card-text">HTML & Javascript & CSS</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Site de snippet" data-content="Test content snippet" data-image="./assets/snippet.png"
+              data-link="https://snippet-o8zu.onrender.com">
+              <img src="./assets/snippet.png" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body">
+                <p class="card-title text-left">Snippet</p>
+                <p class="card-text">Node Js & Express & EJS</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
+            </button>
+            <button class="card mt-2 mb-2 p-0 flex-row text-start" data-bs-toggle="modal" data-bs-target="#Modal"
+              data-title="Inventaire grid" data-content="Test content jouets" data-image="./assets/gameStore.png"
+              data-link="https://game-store-react-next.vercel.app">
+              <img src="./assets/gameStore.png" class="card-img card-button-img flex-shrink-0" alt="Image">
+              <div class="card-body me-2">
+                <p class="card-title">Magasin de jouets</p>
+                <p class="card-text">React & Next & Material UI</p>
+              </div>
+              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
+            </button>
+          </div>
         </div>
       </div>
+
     </div>
 
     <div id="Contact" class="menu-hidden">
@@ -375,9 +379,6 @@
     <iframe src="https://tp3-vpic.onrender.com" frameborder="0" style="display: none;"></iframe>
   </main>
 
-  <div class="pos-rel-top mt-5 pt-5">
-    <img src="./assets/split.svg" alt="split">
-  </div>
   <footer class="text-center blue pt-4">
     <div class="d-flex justify-content-between p-3 mx-auto">
       <a href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img src="./assets/linkedin.svg"

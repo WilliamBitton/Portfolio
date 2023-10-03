@@ -13,13 +13,18 @@
 }
 
 html,
-body {
+body,
+.navbar-brand {
     background-color: rgb(240, 243, 255);
 }
 
 nav {
     max-width: 1280px;
     margin: 0 auto;
+}
+
+.navbar-brand {
+    border-radius: 100%;
 }
 
 .navbar-nav {
@@ -34,11 +39,15 @@ nav {
 }
 
 h1,
-h2,
 .nav-link,
 .card-title {
     font-family: 'Croissant One', Arial, sans-serif;
     font-size: large;
+}
+
+h2 {
+    font-family: 'Croissant One', Arial, sans-serif;
+    font-size: x-large;
 }
 
 p {
@@ -189,11 +198,14 @@ footer a:hover {
         max-width: 1016px;
     }
 
-    h1,
-    h2,
+    h1
     .nav-link,
     .card-title {
         font-size: medium;
+    }
+
+    h2 {
+        font-size: large;
     }
 
     p {
@@ -221,11 +233,14 @@ footer a:hover {
         max-width: 816px;
     }
 
-    h1,
-    h2,
+    h1
     .nav-link,
     .card-title {
         font-size: medium;
+    }
+
+    h2 {
+        font-size: large;
     }
 
     p {
@@ -253,11 +268,14 @@ footer a:hover {
         max-width: 600px;
     }
 
-    h1,
-    h2,
+    h1
     .nav-link,
     .card-title {
         font-size: medium;
+    }
+
+    h2 {
+        font-size: large;
     }
 
     p {
@@ -285,11 +303,14 @@ footer a:hover {
         max-width: 500px;
     }
 
-    h1,
-    h2,
+    h1
     .nav-link,
     .card-title {
         font-size: small;
+    }
+
+    h2 {
+        font-size: medium;
     }
 
     p {
@@ -317,11 +338,14 @@ footer a:hover {
         max-width: 400px;
     }
 
-    h1,
-    h2,
+    h1
     .nav-link,
     .card-title {
         font-size: small;
+    }
+
+    h2 {
+        font-size: medium;
     }
 
     p {
