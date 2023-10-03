@@ -71,7 +71,7 @@ footer div a {
     transition-duration: 1s;
 }
 
-footer a:hover {
+footer a:hover, .link-blue a:hover img {
     transform: scale(1.1) translateY(-10%) rotate(360deg);
 }
 
@@ -81,11 +81,7 @@ footer a:hover {
 }
 
 .link-blue a img {
-    transition-duration: 0.5s;
-}
-
-.link-blue a:hover img {
-    transform: scale(1.1) translateY(-10%);
+    transition-duration: 1s;
 }
 
 .card {
