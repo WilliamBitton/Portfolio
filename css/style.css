@@ -172,10 +172,6 @@ footer a:hover, .link-blue a:hover img {
     bottom: 5px;
 }
 
-.pos-rel-bottom img {
-    transform: rotate(180deg);
-}
-
 .blue {
     background-color: rgb(70, 107, 255);
     color: rgb(240, 243, 255);
