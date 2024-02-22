@@ -57,22 +57,28 @@ p {
     font-size: large;
 }
 
-footer div {
+footer div,
+.menu-hidden-footer div {
     max-width: 400px;
 }
 
-footer p {
+footer p,
+.menu-hidden-footer p {
     font-size: 10px;
 }
 
-footer div a {
+footer div a,
+.menu-hidden-footer div a {
     border-radius: 100%;
     padding: 15px;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
-footer a:hover, .link-blue a:hover img {
-    transform: scale(1.1) translateY(-10%) rotate(360deg);
+footer a:hover,
+.menu-hidden-footer a:hover,
+.link-blue a:hover img,
+.menu-hidden-footer a:hover img {
+    transform: scale(1.1) translateY(-10%);
 }
 
 .link-blue a {
@@ -81,7 +87,7 @@ footer a:hover, .link-blue a:hover img {
 }
 
 .link-blue a img {
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 .card {
@@ -143,11 +149,11 @@ footer a:hover, .link-blue a:hover img {
     padding: 0;
     background-color: transparent;
     border-radius: 100%;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 .button-close:hover {
-    transform: rotate(360deg) scale(1.1);
+    transform: scale(1.1);
 }
 
 .menu-hidden {
