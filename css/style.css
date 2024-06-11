@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Croissant One';
+    src: url('../font/CroissantOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../font/Comfortaa-Regular.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Comfortaa', Arial, sans-serif;
+}
+
+html,
+body {
+    background-color: rgb(240, 243, 255);
+}
+
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-right: 30px !important;
+}
+
+#InnerFirstPage {
+    color: black;
+    background-color: rgb(240, 243, 255);
+    border-radius: 6px;
+}
+
+#LangButton {
+    color: black;
+}
+
+#LangButton:hover {
+    color: rgb(240, 243, 255);
+}
+
+#Home {
+    transition-duration: 0.5s;
+}
+
+#MenuHidden,
+#FirstPage {
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(70, 107, 255);
+    min-height: 100vh;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    font-style: italic;
+    transform: scale(1.1);
+    color: rgb(70, 107, 255);
+}
+
+h1,
+h3,
+.nav-link,
+.card-title {
+    font-family: 'Croissant One', Arial, sans-serif;
+    font-size: large;
+}
+
+h1 {
+    color: rgb(70, 107, 255);
+}
+
+h2 {
+    font-family: 'Croissant One', Arial, sans-serif;
+    font-size: x-large;
+}
+
+p {
+    font-size: large;
+}
+
+footer div {
+    max-width: 400px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer div a {
+    border-radius: 100%;
+    padding: 15px;
+    transition-duration: 0.3s;
+}
+
+footer div a:hover,
+.link-blue a:hover img {
+    transform: scale(1.1) translateY(-10%);
+}
+
+.link-blue a {
+    border-radius: 100%;
+    padding: 15px 15px 15px 0;
+}
+
+.link-blue a img {
+    transition-duration: 0.3s;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(167, 161, 255, 0.409);
+    border: none;
+    transition-duration: 0.3s;
+    background-color: rgb(240, 243, 255);
+}
+
+.card:hover {
+    transform: translateY(-5%) scale(1.02);
+    box-shadow: 0 0 20px rgba(167, 161, 255, 0.409) !important;
+}
+
+.card-button-img {
+    object-fit: cover;
+    height: 100px;
+    width: 150px;
+    padding: 15px;
+}
+
+.card-svg {
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+}
+
+.card-arrow-img {
+    opacity: 0;
+    width: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    transition-duration: 1s;
+    transform: rotate(180deg);
+}
+
+.card:hover .card-arrow-img {
+    opacity: 1;
+    right: 10px;
+    transform: rotate(360deg) scale(1.1);
+}
+
+.button-close-container {
+    position: relative;
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 12px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    transition-duration: 0.3s;
+}
+
+.button-close:hover {
+    transform: scale(1.1);
+}
+
+.menu-hidden {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.z-index {
+    z-index: 1000;
+    font-style: italic;
+    transform: scale(1.1);
+    color: white !important;
+}
+
+.pos-rel-top {
+    position: relative;
+    top: 20px;
+}
+
+.pos-rel-bottom {
+    position: relative;
+    bottom: 20px;
+}
+
+.pos-rel-bottom img {
+    transform: rotate(180deg);
+}
+
+.blue {
+    background-color: rgb(70, 107, 255);
+    color: rgb(240, 243, 255);
+}
+
+.center-full-1512 {
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+.center-1232 {
+    max-width: 1232px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1450px) {
+    .center-1232 {
+        max-width: 1016px;
+    }
+
+    h1,
+    .nav-link,
+    .card-title {
+        font-size: medium;
+    }
+
+    h2 {
+        font-size: large;
+    }
+
+    p {
+        font-size: medium;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .center-1232 {
+        max-width: 816px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .center-1232 {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+
+    h1,
+    .nav-link,
+    .card-title {
+        font-size: small;
+    }
+
+    h2,
+    h3 {
+        font-size: medium;
+    }
+
+    p {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .display-none-media-logo {
+        display: none;
+    }
+}
