@@ -76,7 +76,7 @@ function formValidation (e) {
     play()
   } else if (!regExFirstName()) {
     firstName.classList.add('error')
-    error.textContent = 'Minimum 1, maximum 10 caractères'
+    error.textContent = '1 à 10 lettres, pas de caractères spéciaux, pas de chiffres'
   }
 
   if (!regExnumberOfPairs()) {
@@ -90,7 +90,7 @@ function validate () {
     clean()
   } else {
     firstName.classList.add('error')
-    error.textContent = 'Minimum 1, maximum 10 caractères'
+    error.textContent = '1 à 10 lettres, pas de caractères spéciaux, pas de chiffres'
   }
 }
 

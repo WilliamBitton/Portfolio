@@ -2,125 +2,62 @@ let lang = "fr"
 const translations = {
     en: {
         skills: "Skills",
-        wireframes: "Wireframes",
+        cvNav: "CV",
         projects: "Projects",
-        language: "Voir le site en Français",
+        language: "Fr",
         welcome: "WELCOME.",
-        desc: "Junior web developer in Quebec",
+        desc: "Junior web developer in career transition after more than 10 years of experience in sales and technology. Passionate about writing code and solving problems, I completed a Web Developer course at Cégep Garneau in Quebec, and I am now motivated and ready to take on new challenges !",
         programming: "Programming",
         tools: "Tools",
         design: "Design",
-        wireframes1: "Wireframes",
-        wireframes2: "These wireframes were created using the Figma tool. Some of them are mock-ups, while others are projects for businesses.",
-        wireframes3: "I also had the opportunity to collaborate on the design and development of the Productions JSL company's wireframe and website using WordPress.",
-        projects1: "Projects",
-        projects2: "Here are three projects that have been an opportunity for me to acquire new skills, whether in front-end or back-end.",
-        projects3: "More projects were realised since then, including a mobile application with React Native for Muvac company.",
-        footer: "Created with Bootstrap © 2023 William Bitton",
-        goButton: "Go",
-
-        modal: {
-            project1: {
-                title: "Memory game",
-                content: "Enter your name and the number of card desired and enjoy a moment of relaxation in this memory game created with html, css and javascript.",
-                subline: "HTML & Javascript & CSS"
-            },
-            project2: {
-                title: "Snippet",
-                content: "Snippet website created with Node js and express with an EJS template.",
-                subline: "Node Js & Express & EJS"
-            },
-            project3: {
-                title: "Admin interface",
-                content: "Admin interface for Nadame Design d'intérieur company created with React, Node js and MongoDB.",
-                subline: "React & Next & Material UI"
-            },
-            wireframe1: {
-                title: "Webflix movies and tv series",
-                content: "This mock-up wireframe is an obvious copy of the namesake website, differing by just one letter!",
-                subline: "Figma"
-            },
-            wireframe2: {
-                title: "Cheering Stuff",
-                content: "Actual wireframe of an order management admin interface created for Cheering Stuff company.",
-                subline: "Figma"
-            },
-            wireframe3: {
-                title: "School newspaper",
-                content: "This mock-up wireframe was designed for a student newspaper, enabling monetization through Amazon products and providing product reviews.",
-                subline: "Figma"
-            }
-        }
+        descSkills: "My skills are constantly evolving, and I'm always excited to add a new 'card' to this section !",
+        descProjects: "I'm proud to have collaborated with these awesome companies wich allowed me to learn and enhance my skills as part of their teams:",
+        game: "My first javascript project",
+        descGame: "A simple memory game with up to 10 pairs of cards.",
+        descGame2: "Try it !",
+        descGame3: "Memory game - Html, Css, Javascript",
+        cv: "Curriculum Vitae",
+        descCv: "Say hi !",
+        descCv2: "Contact me at willbitton54@gmail.com ",
+        descCv3: "Or call me at +1 (581) 700-2211",
+        footer: "Created with Bootstrap © 2024 William Bitton",
+        pdfSrc: "./assets/CV William Bitton EN.pdf",
+        cvSrc: "./assets/CV William Bitton EN.svg",
+        download: "Download",
+        descMuvac: "Mobile application - React Native",
+        descNadame: "Website - React and Node Js",
+        descProductionsJSL: "Website - Wordpress and Divi",
+        visitWebsite: "Visit website"
     },
     fr: {
-        skills: "Compétences",
-        wireframes: "Maquettes",
-        projects: "Projets",
-        language: "View website in English",
+        skillsNav: "Compétences",
+        cvNav: "CV",
+        projectsNav: "Projets",
+        language: "En",
         welcome: "BIENVENUE.",
-        desc: "Développeur web junior à Québec",
+        desc: "Développeur web junior en reconversion professionnelle après plus de 10 ans d'expérience dans la vente et les technologies. Passionné par la programmation, j'ai suivi une formation de Développeur Web au cégep Garneau à Québec, et je suis aujourd'hui motivé et prêt à relever de nouveaux défis !",
         programming: "Programmation",
         tools: "Outils",
         design: "Design",
-        wireframes1: "Maquettes",
-        wireframes2: "Ces maquettes ont été réalisées avec l'outil Figma, certaines de ces maquettes sont fictives, d'autres sont des projets pour des entreprises.",
-        wireframes3: "J'ai également eu l'opportunité de collaborer à l'élaboration de la maquette et du site web de la compagnie Productions JSL avec Wordpress.",
-        projects1: "Projets",
-        projects2: "Voici trois projets réalisés durant l'apprentissage des langages du web, ils m'ont permis d'apprendre les bases du front-end et back-end.",
-        projects3: "Plusieurs autres projets ont été réalisés depuis, dont un projet d'application mobile avec React Native pour la compagnie Muvac.",
-        footer: "Crée avec Bootstrap © 2023 William Bitton",
-        goButton: "Voir",
-
-        modal: {
-            project1: {
-                title: "Jeu de mémoire",
-                content: "Entrez votre nom et le nombre de paires de cartes désiré, et profitez d'un instant de détente dans ce jeu de mémoire crée avec html, css et javascript.",
-                subline: "HTML & Javascript & CSS"
-            },
-            project2: {
-                title: "Snippet",
-                content: "Création d'un site de snippet/post-it avec Node js et express avec un template EJS.",
-                subline: "Node Js & Express & EJS"
-            },
-            project3: {
-                title: "Interface d'administration",
-                content: "Création d'une interface d'adminitration pour la compagnie Nadamé Design d'intérieur avec React, Node js et MongoDB.",
-                subline: "React & Next & Material UI"
-            },
-            wireframe1: {
-                title: "Webflix films et séries",
-                content: "Cette maquette fictive est une copie évidente du site éponyme, à une lettre près !",
-                subline: "Figma"
-            },
-            wireframe2: {
-                title: "Cheering Stuff",
-                content: "Maquette réelle d'interface d'administration de commandes réalisée pour la compagnie Cheering Stuff.",
-                subline: "Figma"
-            },
-            wireframe3: {
-                title: "Journal étudiant",
-                content: "Cette maquette fictive a été élaborée pour un journal étudiant, permettant la monétisation via des produits Amazon, et offrant des revues de produits.",
-                subline: "Figma"
-            }
-        }
+        descSkills: "Mes compétences sont en constante évolution, et j'ai toujours hâte de pouvoir ajouter une nouvelle 'carte' dans cette section !",
+        descProjects: "Je suis heureux d'avoir pu collaborer avec ces entreprises qui m'ont permis d'évoluer au sein de leurs équipes:",
+        game: "Mon premier projet javascript",
+        descGame: "Un simple jeu de mémoire allant jusqu'à 10 paires de cartes.",
+        descGame2: "Essayez-le !",
+        descGame3: "Jeu de mémoire - Html, Css, Javascript",
+        cv: "Curriculum Vitae",
+        descCv: "Contactez-moi !",
+        descCv2: "À l'adresse willbitton54@gmail.com",
+        descCv3: "Ou au +1 (581) 700-2211",
+        footer: "Crée avec Bootstrap © 2024 William Bitton",
+        pdfSrc: "./assets/CV William Bitton.pdf",
+        cvSrc: "./assets/CV William Bitton.svg",
+        download: "Télécharger",
+        descMuvac: "Application mobile - React Native",
+        descNadame: "Site - React et Node Js",
+        descProductionsJSL: "Site - Wordpress et Divi",
+        visitWebsite: "Visiter le site"
     }
-}
-// let elements = document.querySelectorAll('[data-translate]');
-// elements.forEach(function (element) {
-//     let key = element.getAttribute('data-translate');
-//     let keyParts = key.split('.');
-//     if (translations[lang] && keyParts.length > 1 && translations[lang][keyParts[0]][keyParts[1]][keyParts[2]]) {
-//         element.textContent = translations[lang][keyParts[0]][keyParts[1]][keyParts[2]];
-//     } else if (translations[lang] && translations[lang][key]) {
-//         element.textContent = translations[lang][key];
-//     }
-// });
-function enterWebsite(language) {
-    changeLanguage(language);
-    document.getElementById("Home").classList.toggle("d-none")
-    document.getElementById("FirstPage").classList.toggle("menu-hidden")
-    setTimeout(displayHome, 0)
-    setTimeout(hidFirstPage, 500)
 }
 function toggleLanguage() {
     if (lang === "fr") {
@@ -131,6 +68,9 @@ function toggleLanguage() {
 }
 function changeLanguage(language) {
     lang = language
+    const pdfSource = translations[lang].pdfSrc
+    const cvSource = translations[lang].cvSrc
+    changePdfSource(pdfSource, cvSource)
     let elements = document.querySelectorAll('[data-translate]');
     elements.forEach(function (element) {
         let key = element.getAttribute('data-translate');
@@ -142,46 +82,65 @@ function changeLanguage(language) {
         }
     });
 }
-function hidHome() {
-    document.getElementById("Home").classList.toggle("d-none")
+function getUserLanguage() {
+    const browserLang = navigator.language || navigator.userLanguage
+    return browserLang.startsWith('fr' || "fr") ? 'fr' : 'en'
 }
-function hidFirstPage() {
-    document.getElementById("FirstPage").classList.toggle("d-none")
+function changePdfSource(pdfSource, cvSource) {
+    document.getElementById("PdfDownload").href = pdfSource
+    document.getElementById("CvViewer").src = cvSource
 }
-function displayHome() {
-    document.getElementById("Home").classList.toggle("menu-hidden")
+function displayNoneMainPage() {
+    document.getElementById("MainPage").classList.toggle("d-none")
 }
-function handleMenu(e) {
+function hideLeftMainPage() {
+    document.getElementById("MainPage").classList.toggle("hide-left")
+}
+function handleSlider(e) {
     e.preventDefault()
     const name = e.currentTarget.getAttribute("name")
     document.getElementById("Logo").classList.toggle("d-none")
     document.getElementById("Logo-white").classList.toggle("d-none")
-    document.getElementById("MenuHidden").classList.toggle("menu-hidden")
-    if (name !== "CloseMenuHidden") {
-        MenuHiddenContent.innerHTML = ""
+    document.getElementById("Slider").classList.toggle("hide-left")
+    if (name !== "CloseSlider") {
+        SliderContent.innerHTML = ""
         const element = document.getElementById(name)
         const clonedElement = element.cloneNode(true)
-        MenuHiddenContent.appendChild(clonedElement)
-        document.querySelectorAll(".handle-modal").forEach(element => { element.addEventListener("click", handleModal) })
+        SliderContent.appendChild(clonedElement)
         document.getElementById(name + "Link").classList.toggle("z-index")
+        document.querySelectorAll(".handle-slider").forEach(element => {
+            if (element !== e.currentTarget && element.name !== "CloseSlider") {
+            element.removeEventListener("click", handleSlider);
+            }
+        })
     } else {
         document.getElementById("SkillsLink").classList.remove("z-index")
         document.getElementById("ProjectsLink").classList.remove("z-index")
-        document.getElementById("WireframesLink").classList.remove("z-index")
+        document.getElementById("CvLink").classList.remove("z-index")
+        document.querySelectorAll(".handle-slider").forEach(element => { element.addEventListener("click", handleSlider) })
     }
-    if (document.getElementById("Home").classList.contains("menu-hidden")) {
-        document.getElementById("Home").classList.toggle("d-none")
-        setTimeout(displayHome, 0)
+    if (document.getElementById("MainPage").classList.contains("hide-left")) {
+        document.getElementById("MainPage").classList.toggle("d-none")
+        setTimeout(hideLeftMainPage, 0)
+        document.querySelectorAll(".handle-slider").forEach(element => { element.addEventListener("click", handleSlider) })
     } else {
-        document.getElementById("Home").classList.toggle("menu-hidden")
-        setTimeout(hidHome, 250)
+        document.getElementById("MainPage").classList.toggle("hide-left")
+        setTimeout(displayNoneMainPage, 250)
     }
 }
-function handleModal(e) {
-    document.getElementById("ModalLabel").textContent = translations[lang].modal[e.currentTarget.dataset.title].title
-    document.getElementById("ModalContent").textContent = translations[lang].modal[e.currentTarget.dataset.title].content
-    document.getElementById("ModalImage").src = e.currentTarget.dataset.image
-    document.getElementById("ModalLink").href = e.currentTarget.dataset.link
+window.onload = function () {
+    const userLang = getUserLanguage()
+    changeLanguage(userLang)
+    const pdfSource = translations[userLang].pdfSrc
+    const cvSource = translations[userLang].cvSrc
+    changePdfSource(pdfSource, cvSource)
 }
-document.querySelectorAll(".handle-menu").forEach(element => { element.addEventListener("click", handleMenu) })
-document.querySelectorAll(".handle-modal").forEach(element => { element.addEventListener("click", handleModal) })
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    document.getElementById("scrollToTopBtn").style.display = "block"
+    } else {
+    document.getElementById("scrollToTopBtn").style.display = "none"
+    }
+}
+document.querySelectorAll(".handle-slider").forEach(element => { element.addEventListener("click", handleSlider) })
+document.getElementById("scrollToTopBtn").addEventListener("click", function() {window.scrollTo({ top: 0, behavior: 'smooth' })})

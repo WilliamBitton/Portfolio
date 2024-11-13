@@ -14,224 +14,221 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand mt-1 center-1232">
+    <nav class="navbar navbar-expand mt-1 pe-1 center-1232">
       <div class="container-fluid p-0">
-        <a id="Logo" class="navbar-brand z-index display-none-media-logo p-0 me-0" href="/"><img src="./assets/logo.svg"
+        <a id="Logo" class="navbar-brand z-index p-0 me-0" href="/"><img src="./assets/logo.svg"
             alt="LOGO" width="40px"></a>
-        <a id="Logo-white" class="navbar-brand z-index display-none-media-logo p-0 me-0 d-none" href="/"><img
+        <a id="Logo-white" class="navbar-brand z-index p-0 me-0 d-none" href="/"><img
             src="./assets/logo-white.svg" alt="LOGO" width="40px"></a>
-        <div class="navbar-nav border-bottom ms-1 me-2">
-          <button class="nav-link handle-menu" id="SkillsLink" name="Skills" data-translate="skills"></button>
-          <button class="nav-link handle-menu" id="WireframesLink" name="Wireframes"
-            data-translate="wireframes"></button>
-          <button class="nav-link handle-menu" id="ProjectsLink" name="Projects" data-translate="projects"></button>
-          <!-- <button onclick="toggleLanguage()" class="nav-link" data-translate="language"></button> -->
+        <div class="navbar-nav border-bottom ms-1 me-1">
+          <button class="nav-link handle-slider" id="SkillsLink" name="Skills" data-translate="skills"></button>
+          <button class="nav-link handle-slider" id="CvLink" name="Cv" data-translate="cvNav"></button>
+          <button class="nav-link handle-slider" id="ProjectsLink" name="Projects" data-translate="projects"></button>
+          <button onclick="toggleLanguage()" class="nav-link" data-translate="language"></button>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- LANG PAGE -->
-  <div id="FirstPage" class="d-flex justify-content-center align-items-center">
-    <div id="InnerFirstPage" class="text-center d-flex flex-row p-3 m-3">
-      <button onclick="enterWebsite('fr')" class="nav-link m-3">Voir le site en Français</button>
-      <button onclick="enterWebsite('en')" class="nav-link m-3">View website in English</button>
-    </div>
-  </div>
-  <!-- LANG PAGE -->
-
-  <div id="Home" class="d-none menu-hidden">
+  <div id="MainPage">
     <main>
       <!-- WELCOME-->
-      <div class="row center-1232 pt-5 pb-5 align-items-center">
+      <div class="row center-1232 pt-5 pb-5 align-items-center border-bottom">
         <div class="col-md-12 col-lg-5 col-xl-4 order-2 order-lg-1 p-0">
-          <h1 class="fs-1 mt-5" data-translate="welcome"></h1>
-          <h2 class="pt-2">William Bitton</h2>
+          <h1 data-translate="welcome"></h1>
+        </div>
+        <div class="col-md-12 col-lg-7 col-xl-8 order-1 order-lg-2 p-0 pb-5">
+          <img id="BackgroundImage" src="./assets/home.svg" alt="Home image">
+        </div>
+        <div class="col-12 order-3 p-0">
+          <h3 class="mt-3">William Bitton</h3>
           <p class="mt-2 mb-5" data-translate="desc"></p>
-          <div class="mt-2 link-blue">
+          <div class="mt-2 link-color">
             <a class="m-2 ms-0" href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img
-                src="./assets/linkedin-blue.svg" alt="linkedin icon" width="30px"></a>
-            <a class="m-2" href="mailto:willbitton54@gmail.com"><img src="./assets/envelope-blue.svg" alt="mail icon"
+                src="./assets/linkedin-color.svg" alt="linkedin icon" width="30px"></a>
+            <a class="m-2" href="mailto:willbitton54@gmail.com"><img src="./assets/envelope-color.svg" alt="mail icon"
                 width="30px"></a>
-            <a class="m-2" href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github-blue.svg"
+            <a class="m-2" href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github-color.svg"
                 alt="github icon" width="30px"></a>
           </div>
         </div>
-        <div class="col-md-12 col-lg-7 col-xl-8 order-1 order-lg-2 p-0"><img id="BackgroundImage"
-            src="./assets/home.svg" alt="Home image"></div>
       </div>
       <!-- WELCOME-->
 
-      <!-- SKILLS LIST-->
+       <!-- SKILLS LIST-->
       <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
         <div id="Skills" class="row center-1232 align-items-center">
+          <h2 class="p-0" data-translate="skills"></h2>
+          <p class="mt-5 p-0" data-translate="descSkills"></p>
           <div class="col-md-12 col-lg-6 col-xl-4 p-0">
-            <h3 class="mb-4 ms-2 mt-5" data-translate="programming"></h3>
-            <badge class="card me-2 flex-row text-start">
+            <h3 class="mb-4 mt-5 mx-2" data-translate="programming"></h3>
+            <badge class="card card-shadow mx-2 flex-row text-start">
               <img src="./assets/java.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Java</p>
-              </div>
             </badge>
-            <badge class="card mt-3 mb-3 me-2 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
               <img src="./assets/node.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Node js</p>
-              </div>
             </badge>
-            <badge class="card me-2 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+              <img src="./assets/javascript.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">Javascript</p>
+            </badge>
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+              <img src="./assets/css.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">HTML & CSS</p>
+            </badge>
+            <badge class="card card-shadow mx-2 flex-row text-start">
               <img src="./assets/react.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2"> React & React Native</p>
-              </div>
             </badge>
           </div>
           <div class="col-md-12 col-lg-6 col-xl-4 p-0">
-            <h3 class="mb-4 ms-2 mt-5" data-translate="tools"></h3>
-            <badge class="card ms-2 me-2 mb-3 flex-row text-start">
+            <h3 class="mb-4 mt-5 mx-2" data-translate="tools"></h3>
+            <badge class="card card-shadow mx-2 flex-row text-start">
+              <img src="./assets/git-color.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">Git</p>
+            </badge>
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
               <img src="./assets/xcode.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Xcode</p>
-              </div>
             </badge>
-            <badge class="card m-2 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
               <img src="./assets/wordpress.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Wordpress</p>
-              </div>
             </badge>
-            <badge class="card ms-2 me-2 mt-3 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+              <img src="./assets/visual-code.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">Visual Code</p>
+            </badge>
+            <badge class="card card-shadow mx-2 flex-row text-start">
               <img src="./assets/android-studio.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Android Studio</p>
-              </div>
             </badge>
           </div>
           <div class="col-md-12 col-lg-12 col-xl-4 p-0">
-            <h3 class="mb-4 ms-2 mt-5" data-translate="design"></h3>
-            <badge class="card ms-2 flex-row text-start">
+            <h3 class="mb-4 mt-5 mx-2" data-translate="design"></h3>
+            <badge class="card card-shadow mx-2 flex-row text-start">
               <img src="./assets/figma.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
                 <p class="card-title mt-2">Figma</p>
-              </div>
             </badge>
-            <badge class="card mt-3 mb-3 ms-2 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
               <img src="./assets/illustrator.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
-                <p class="card-title mt-2">Illustrator & Photoshop</p>
-              </div>
+                <p class="card-title mt-2">Illustrator</p>
             </badge>
-            <badge class="card ms-2 flex-row text-start">
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+              <img src="./assets/photoshop.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">Photoshop</p>
+            </badge>
+            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
               <img src="./assets/after-effects.svg" class="card-img card-svg" alt="Image">
-              <div class="card-body ps-1">
-                <p class="card-title mt-2">After Effects & Premiere Pro</p>
-              </div>
+                <p class="card-title mt-2">After Effects</p>
+            </badge>
+            <badge class="card card-shadow mx-2 flex-row text-start">
+              <img src="./assets/premiere-pro.svg" class="card-img card-svg" alt="Image">
+                <p class="card-title mt-2">Premiere Pro</p>
             </badge>
           </div>
         </div>
       </div>
       <!-- SKILLS LIST -->
 
-      <!-- WIREFRAMES -->
-      <div class="pos-rel-top center-full-1512">
-        <img src="./assets/split.svg" alt="split">
-      </div>
-      <div class="blue pt-5 pb-5 center-full-1512">
-        <div id="Wireframes" class="row center-1232 align-items-center">
-          <div class="col-md-12 col-lg-6 order-2 order-lg-1 p-0">
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="wireframe1" data-content="" data-image="./assets/webflix.jpg"
-              data-link="./assets/webflix.jpg">
-              <img src="./assets/webflix.jpg" class="card-img card-button-img" alt="Image">
-              <div class="card-body">
-                <p class="card-title" data-translate="modal.wireframe1.title"></p>
-                <p class="card-text" data-translate="modal.wireframe1.subline"></p>
-              </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-            </button>
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="wireframe2" data-content="" data-image="./assets/cs2.png"
-              data-link="./assets/cs3.png">
-              <img src="./assets/cs1.png" class="card-img card-button-img" alt="Image">
-              <div class="card-body">
-                <p class="card-title text-left" data-translate="modal.wireframe2.title"></p>
-                <p class="card-text" data-translate="modal.wireframe2.subline"></p>
-              </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-            </button>
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="wireframe3" data-content="" data-image="./assets/journal.jpg"
-              data-link="./assets/journal.jpg">
-              <img src="./assets/journal.jpg" class="card-img card-button-img" alt="Image">
-              <div class="card-body me-2">
-                <p class="card-title" data-translate="modal.wireframe3.title"></p>
-                <p class="card-text" data-translate="modal.wireframe3.subline"></p>
-              </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon">
-            </button>
-          </div>
-          <div class="text-end pt-5 ps-5 mb-5 p-0 col-md-12 col-lg-6 order-1 order-lg-2">
-            <h2 data-translate="wireframes1"></h2>
-            <p class="mt-5" data-translate="wireframes2"></p>
-            <p class="mt-2" data-translate="wireframes3"></p>
-          </div>
-        </div>
-      </div>
-      <div class="pos-rel-bottom center-full-1512">
-        <img src="./assets/split.svg" alt="split">
-      </div>
-      <!-- WIREFRAMES / -->
-
       <!-- PROJECTS -->
-      <div class="pt-5 pb-5 center-full-1512">
-        <div id="Projects" class="row center-1232 align-items-center">
-          <div class="text-start pt-5 pe-5 p-0 mb-5 col-md-12 col-lg-6">
-            <h2 data-translate="projects1"></h2>
-            <p class="mt-5" data-translate="projects2"></p>
-            <p data-translate="projects3"></p>
-          </div>
-          <div class="col-md-12 col-lg-6 order-2 order-lg-1 p-0">
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="project1" data-image="./assets/MemoryGame.png"
-              data-link="./projects/memoryGame/index.html">
-              <img src="./assets/memoryGame2.png" class="card-img card-button-img" alt="Image">
-              <div class="card-body">
-                <p class="card-title" data-translate="modal.project1.title"></p>
-                <p class="card-text" data-translate="modal.project1.subline"></p>
+      <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
+        <div id="Projects" class="center-1232 align-items-center">
+            <h2 data-translate="projects"></h2>
+            <p class="mt-5 mb-5" data-translate="descProjects"></p>
+            <div class="row">
+              <badge class="col-12 col-lg-4 card card-hover p-3">
+                <div class="badge-background">
+              <img src="./assets/muvac.png" class="card-img" alt="Image Muvac">
+              <div class="overlay d-flex flex-column align-items-center">
+                <p data-translate="descMuvac" class="ms-5 me-5 mt-2 text-center white"></p>
+                <a href="https://www.muvac.com/en/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-            </button>
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="project2" data-image="./assets/snippet.png"
-              data-link="./assets/snippet.png">
-              <img src="./assets/snippet.png" class="card-img card-button-img" alt="Image">
-              <div class="card-body">
-                <p class="card-title text-left" data-translate="modal.project2.title"></p>
-                <p class="card-text" data-translate="modal.project2.subline"></p>
+            </div>
+              </badge>
+              <badge class="col-12 col-lg-4 card card-hover p-3">
+                <div class="badge-background">
+              <img src="./assets/nadame.png" class="card-img" alt="Image Nadamé Design">
+              <div class="overlay d-flex flex-column align-items-center">
+                <p data-translate="descNadame" class="ms-5 me-5 mt-2 text-center white"></p>
+                <a href="https://www.nadamedesign.com/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-            </button>
-            <button class="card handle-modal mt-3 mb-3 p-0 flex-row text-start w-100" data-bs-toggle="modal"
-              data-bs-target="#Modal" data-title="project3" data-image="./assets/nadame1.png"
-              data-link="./assets/nadame2.png">
-              <img src="./assets/nadame1.png" class="card-img card-button-img" alt="Image">
-              <div class="card-body me-2">
-                <p class="card-title" data-translate="modal.project3.title"></p>
-                <p class="card-text" data-translate="modal.project3.subline"></p>
+            </div>
+              </badge>
+              <badge class="col-12 col-lg-4 card card-hover p-3">
+                <div class="badge-background">
+                  <img src="./assets/productions JSL.png" class="card-img" alt="Image Productions JSL">
+              <div class="overlay d-flex flex-column align-items-center">
+                  <p data-translate="descProductionsJSL" class="ms-5 me-5 mt-2 text-center white"></p>
+                  <a href="https://productionsjsl.com/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
-              <img src="./assets/arrow-card.svg" class="card-arrow-img" alt="arrow icon" width="40px">
-            </button>
-          </div>
+                </div>
+              </badge>
+            </div>
+
         </div>
       </div>
       <!-- PROJECTS / -->
+
+      <!-- FIRST PROJECT -->
+      <div class="blue">
+      <div id="FirstProject" class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
+        <div class="row center-1232 align-items-center pt-5 pb-5">
+          <div class="text-start pe-5 mb-5 p-0 col-12 col-lg-6">
+            <h2 data-translate="game"></h2>
+            <p class="mt-5" data-translate="descGame"></p>
+            <p class="mt-2" data-translate="descGame2"></p>
+          </div>
+          <div class="col-12 col-lg-6 p-0">
+            <badge class="card card-hover p-1">
+              <div class="badge-background">
+                <img src="./assets/memory-game.png" class="card-img" alt="Image">
+                <div class="overlay d-flex flex-column align-items-center">
+                  <p data-translate="descGame3" class="ms-5 me-5 mt-2 text-center"></p>
+                  <a href="./projects/memoryGame/index.html" target="_blank">
+                    <button data-translate="visitWebsite" class="btn button-card-hover d-flex mx-auto mt-0"></button>
+                  </a>
+                </div>
+              </div>
+            </badge>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- FIRST PROJECT / -->
+
+      <!-- CV -->
+      <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
+        <div id="Cv" class="row center-1232 align-items-center">
+          <div class="text-start pe-5 mb-5 p-0 col-md-12 col-lg-6">
+            <h2 data-translate="cv"></h2>
+            <p class="mt-5" data-translate="descCv"></p>
+            <p class="mt-2" data-translate="descCv2"></p>
+            <p class="mt-2" data-translate="descCv3"></p>
+          </div>
+          <div class="col-md-12 col-lg-6 p-0">
+            <badge class="card card-hover p-1">
+              <div class="badge-background">
+                <img id="CvViewer" class="cv-image" alt="cv">
+                <div class="overlay d-flex flex-column align-items-center">
+                  <a id="PdfDownload" href="#" download>
+                    <button data-translate="download" class="btn button-card-hover d-flex mx-auto mt-5"></button>
+                  </a>
+                </div>
+              </div>
+            </badge>
+          </div>
+        </div>
+      </div>
+      <!-- CV / -->
+
     </main>
 
     <!-- FOOTER -->
-    <div class="pos-rel-top center-full-1512">
-      <img src="./assets/split.svg" alt="split">
-    </div>
-    <footer class="text-center blue pt-4 center-full-1512">
+    <div class="blue">
+    <footer class="text-center pt-4 center-full-1512">
       <div class="d-flex justify-content-between p-3 mx-auto">
         <a href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img src="./assets/linkedin.svg"
             alt="linkedin icon" width="40px"></a>
@@ -239,40 +236,25 @@
         <a href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github.svg" alt="github icon"
             width="40px"></a>
       </div>
-      <a href="#Home" class="text-decoration-none d-flex justify-content-center"><button id="LangButton"
-          onclick="toggleLanguage()" class="nav-link p-2 m-3" data-translate="language"></button></a>
       <p class="mt-3 mb-0 pb-4" data-translate="footer"></p>
     </footer>
+  </div>
     <!-- FOOTER / -->
   </div>
 
-  <div id="Modal" class="modal fade" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title" id="ModalLabel"></h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <img id="ModalImage" src="" alt="Image" width="100%" height="100%">
-          <p id="ModalContent" class="mt-3 mb-0"></p>
-        </div>
-        <div class="modal-footer">
-          <a id="ModalLink" href="" target="_blank" class="btn btn-primary" data-translate="goButton"></a>
-        </div>
+  <div id="Slider" class="hide-left orange">
+    <div class="button-close-container">
+      <button class="button-close handle-slider" name="CloseSlider"><img src="./assets/arrow.svg" alt="X"
+          width="40px">
+      </button>
+    </div>
+    <div class="pt-5">
+      <div id="SliderContent" class="mt-5 mb-5 pt-5 pb-5">
       </div>
     </div>
   </div>
 
-  <div id="MenuHidden" class="menu-hidden blue">
-    <div class="button-close-container">
-      <button class="button-close handle-menu" name="CloseMenuHidden"><img src="./assets/arrow.svg" alt="X"
-          width="40px">
-      </button>
-    </div>
-    <div id="MenuHiddenContent" class="mt-5 pt-5 mb-5 pb-5">
-    </div>
-  </div>
+  <button id="scrollToTopBtn">↑</button>
 
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
