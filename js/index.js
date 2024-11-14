@@ -33,9 +33,9 @@ const translations = {
         visitWebsite: "Visit website"
     },
     fr: {
-        skillsNav: "Compétences",
+        skills: "Compétences",
         cvNav: "CV",
-        projectsNav: "Projets",
+        projects: "Projets",
         language: "En",
         welcome: "BIENVENUE.",
         desc: "Développeur web junior en reconversion professionnelle après plus de 10 ans d'expérience dans la vente et les technologies. Passionné par la programmation, j'ai suivi une formation de Développeur Web au cégep Garneau à Québec, et je suis aujourd'hui motivé et prêt à relever de nouveaux défis !",
@@ -65,7 +65,7 @@ const translations = {
         visitWebsite: "Visiter le site"
     }
 }
-changeLanguage(lang)
+// changeLanguage(lang)
 function toggleLanguage() {
     if (lang === "fr") {
         changeLanguage('en');
