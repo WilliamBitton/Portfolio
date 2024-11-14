@@ -65,6 +65,7 @@ const translations = {
         visitWebsite: "Visiter le site"
     }
 }
+changeLanguage(lang)
 function toggleLanguage() {
     if (lang === "fr") {
         changeLanguage('en');
