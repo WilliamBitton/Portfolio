@@ -10,43 +10,43 @@ const errorNb = document.getElementById('errorNb')
 const cardArray = [
   {
     name: '1',
-    img: 'img/1.png'
+    img: 'img/monstre-1.svg'
   },
   {
     name: '2',
-    img: 'img/2.png'
+    img: 'img/monstre-2.svg'
   },
   {
     name: '3',
-    img: 'img/3.png'
+    img: 'img/monstre-3.svg'
   },
   {
     name: '4',
-    img: 'img/4.png'
+    img: 'img/monstre-4.svg'
   },
   {
     name: '5',
-    img: 'img/5.png'
+    img: 'img/monstre-5.svg'
   },
   {
     name: '6',
-    img: 'img/6.png'
+    img: 'img/monstre-6.svg'
   },
   {
     name: '7',
-    img: 'img/7.png'
+    img: 'img/monstre-7.svg'
   },
   {
     name: '8',
-    img: 'img/8.png'
+    img: 'img/monstre-8.svg'
   },
   {
     name: '9',
-    img: 'img/9.png'
+    img: 'img/monstre-9.svg'
   },
   {
     name: '10',
-    img: 'img/10.png'
+    img: 'img/monstre-10.svg'
   }
 ]
 const shuffledCards = []
@@ -81,7 +81,7 @@ function formValidation (e) {
 
   if (!regExnumberOfPairs()) {
     numberOfPairs.classList.add('error')
-    errorNb.textContent = 'Vous devez saisir un chiffre entre 2 et 10'
+    errorNb.textContent = 'Minimum de 2 paires et maximum de 10 paires'
   }
 }
 
@@ -99,7 +99,7 @@ function validateNb () {
     cleanNb()
   } else {
     numberOfPairs.classList.add('error')
-    errorNb.textContent = 'Vous devez saisir un chiffre entre 2 et 10'
+    errorNb.textContent = 'Minimum de 2 paires et maximum de 10 paires'
   }
 }
 
@@ -130,7 +130,7 @@ function play () {
 
   for (let i = 0; i < numberOfPairs.value * 2; i++) {
     const card = document.createElement('img')
-    card.setAttribute('src', 'img/0.png')
+    card.setAttribute('src', 'img/monstre-cover.svg')
     card.setAttribute('data-id', i)
     card.addEventListener('click', flip)
     game.appendChild(card)
@@ -189,8 +189,8 @@ function flipBack () {
   } else {
     cards[cardsChosenId[0]].classList.remove('flipped')
     cards[cardsChosenId[1]].classList.remove('flipped')
-    cards[cardsChosenId[0]].setAttribute('src', 'img/0.png')
-    cards[cardsChosenId[1]].setAttribute('src', 'img/0.png')
+    cards[cardsChosenId[0]].setAttribute('src', 'img/monstre-cover.svg')
+    cards[cardsChosenId[1]].setAttribute('src', 'img/monstre-cover.svg')
     cards[cardsChosenId[0]].addEventListener('click', flip)
     cards[cardsChosenId[1]].addEventListener('click', flip)
   }
