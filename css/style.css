@@ -1,3 +1,4 @@
+/* --- FONT --- */
 @font-face {
     font-family: 'WixMadeforText-Bold';
     src: url('../font/WixMadeforText-ExtraBold.ttf') format('truetype');
@@ -10,26 +11,117 @@
 
 * {
     font-family: 'WixMadeforText', Arial, sans-serif;
+    transition-duration: 0.5s;
 }
 
-nav {
-    max-width: 1280px;
+h1 {
+    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
+    font-size: clamp(32px, 4.9vw, 48px);
+    color: #f8632c;
+}
+
+h2 {
+    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
+    font-size: clamp(28px, 3vw, 50px);
+}
+
+h3 {
+    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
+    font-size: clamp(15px, 1.5vw, 20px);
+}
+
+p {
+    font-size: clamp(15px, 1.5vw, 20px);
+}
+
+a {
+    text-decoration: none;
+}
+/* --- FONT --- */
+
+
+/* --- COLOR --- */
+.white {
+    color: white;
+}
+
+.background-blue {
+    background-color: #363CBF;
+}
+
+.background-orange {
+    background-color: #f8632c;
+}
+
+.background-white {
+    background-color: white;
+}
+/* --- COLOR --- */
+
+
+/* --- NAV --- */
+nav, .center-1232 {
+    max-width: 1232px;
     margin: 0 auto;
+    width: 90%;
 }
 
-#MainPage {
-    transition-duration: 0.5s;
+.nav-link {
+    font-size: 15px;
 }
 
-#Slider {
-    transition-duration: 0.5s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-height: 100vh;
+.nav-link:hover {
+    cursor: pointer;
+    font-style: italic;
+    transform: scale(1.1);
+    color: #363CBF;
 }
 
+.z-index {
+    z-index: 1000;
+    font-style: italic;
+    transform: scale(1.1);
+    color: white !important;
+}
+
+@media screen and (max-width: 575px) {
+    nav, .center-1232 {
+        max-width: 1232px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .navbar-nav {
+        display:none;
+    }
+}
+/* --- NAV --- */
+
+
+/* --- FOOTER + SOCIAL MEDIA LINK --- */
+footer div {
+    max-width: 400px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+footer div a,
+#Welcome a img {
+    transition-duration: 0.3s;
+}
+
+footer div a:hover,
+#Welcome a:hover img {
+    transform: scale(1.1) translateY(-10%);
+}
+/* --- FOOTER + SOCIAL MEDIA LINK --- */
+
+
+/* --- SCROLL TO TOP BUTTON --- */
 #scrollToTopBtn {
     position: fixed;
     bottom: 20px;
@@ -51,74 +143,10 @@ nav {
     background-color: white;
     color: #363CBF;
 }
+/* --- SCROLL TO TOP BUTTON --- */
 
-.nav-link:hover {
-    cursor: pointer;
-    font-style: italic;
-    transform: scale(1.1);
-    color: #363CBF;
-}
 
-.nav-link {
-    font-size: 15px;
-}
-
-#Projects badge div p {
-    font-size: clamp(15px, 1.5vw, 20px);
-}
-
-h1 {
-    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
-    font-size: clamp(40px, 5vw, 50px);
-    color: #f8632c;
-}
-
-h2 {
-    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
-    font-size: clamp(30px, 4vw, 50px);
-}
-
-h3 {
-    font-family: 'WixMadeforText-Bold', Arial, sans-serif;
-    font-size: clamp(15px, 2vw, 20px);
-}
-
-p {
-    font-size: clamp(15px, 2vw, 20px);
-}
-
-a {
-    text-decoration: none;
-}
-
-footer div {
-    max-width: 400px;
-}
-
-footer p {
-    font-size: 10px;
-}
-
-footer div a {
-    border-radius: 100%;
-    padding: 15px;
-    transition-duration: 0.3s;
-}
-
-footer div a:hover,
-.link-color a:hover img {
-    transform: scale(1.1) translateY(-10%);
-}
-
-.link-color a {
-    border-radius: 100%;
-    padding: 15px 15px 15px 0;
-}
-
-.link-color a img {
-    transition-duration: 0.3s;
-}
-
+/* --- CARD --- */
 .card {
     border: none;
     transition-duration: 0.3s;
@@ -133,10 +161,12 @@ footer div a:hover,
 }
 
 .card-shadow:hover {
-    transform: translateY(-5%) scale(1.02);
     box-shadow: 0 0 20px rgba(167, 161, 255, 0.409) !important;
 }
+/* --- CARD --- */
 
+
+/* --- IMAGE --- */
 .card-svg {
     object-fit: cover;
     height: 30px;
@@ -144,6 +174,14 @@ footer div a:hover,
     margin: auto 10px;
 }
 
+.cv-image {
+    width: 100%;
+    border-radius: 5px;
+}
+/* --- IMAGE --- */
+
+
+/* --- BADGE --- */
 .overlay {
     position: absolute;
     top: 0;
@@ -152,158 +190,101 @@ footer div a:hover,
     width: 100%;
     border-radius: 8px;
     opacity: 0;
-    transition-duration: 0.5s;
     justify-content: center;
 }
 
-#Projects badge, #Cv badge, #FirstProject badge {
+badge {
     background-color: transparent !important;
 }
 
-.badge-background {
-    background-color: #f8632c;
-    border-radius: 5px;
-}
-
-.card-hover img {
-    transition-duration: 0.5s;
-}
-
-.card-hover:hover img {
+badge:hover img {
     opacity: 0;
 }
 
-.card-hover:hover .overlay {
+badge:hover .overlay {
     opacity: 1;
-    scale: 1;
 }
 
-.button-close-container {
-    position: relative;
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
+.badge-background {
+    border-radius: 5px;
+}
+/* --- BADGE --- */
+
+
+/* --- BADGE BUTTON --- */
+badge button {
+    color: white !important;
+    border-color: white !important;
+    border-width: 2px !important;
 }
 
-.button-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 12px;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    border-radius: 100%;
-    transition-duration: 0.3s;
+badge button:hover {
+    color: black !important;
+    background-color: white !important;
 }
 
-.button-close:hover {
-    transform: scale(1.1);
+#FirstProject badge button {
+    color: #f8632c !important;
+    border-color: #f8632c !important;
 }
 
+#FirstProject badge button:hover {
+    color: white !important;
+    background-color: #f8632c !important;
+}
+/* --- BADGE BUTTON --- */
+
+
+/* --- SLIDER --- */
 .hide-left {
     opacity: 0;
     transform: translateX(-100%);
 }
 
-.cv-image {
-    width: 100%;
-    border-radius: 5px;
+#Slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
 }
 
-#SliderContent .badge-background, #FirstProject .badge-background {
+#SliderContent .badge-background {
     background-color: white;
 }
 
-#SliderContent .card-hover p {
-    color: #363CBF;
+#SliderContent badge p {
+    color: #363CBF !important;
 }
 
-#SliderContent .button-card-hover {
-    color: #363CBF;
-    border-color: #363CBF;
+#SliderContent badge button {
+    color: #363CBF !important;
+    border-color: #363CBF !important;
 }
 
-#SliderContent .button-card-hover:hover {
-    color: white;
-    background-color: #363CBF;
-}
-
-.button-card-hover {
-    color: white;
-    border-color: white;
-    border-width: 2px;
-    display: flex;
-    margin: 0 auto 0 auto;
-}
-
-.button-card-hover:hover {
-    color:rgb(24, 37, 87);
-    background-color: white;
-}
-
-#FirstProject .button-card-hover {
-    color: #f8632c;
-    border-color: #f8632c;
-}
-
-#FirstProject .button-card-hover:hover {
-    color: white;
-    background-color: #f8632c;
-}
-
-.z-index {
-    z-index: 1000;
-    font-style: italic;
-    transform: scale(1.1);
+#SliderContent badge button:hover {
     color: white !important;
+    background-color: #363CBF !important;
+}
+/* --- SLIDER --- */
+
+
+/* --- CLOSE SLIDER BUTTON --- */
+.close-slider-button-container {
+    position: relative;
 }
 
-.blue {
-    background-color: #363CBF;
-    color: white;
+.close-slider-button-container button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition-duration: 0.3s;
+    border: none;
+    background-color: transparent;
+    border-radius: 100%;
 }
 
-.orange {
-    background-color: #f8632c;
-    color: white;
+.close-slider-button-container button:hover {
+    transform: scale(1.1);
 }
-
-.white {
-    color: white;
-}
-
-.center-full-1512 {
-    max-width: 1512px;
-    margin: 0 auto;
-}
-
-.center-1232 {
-    max-width: 1232px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 1450px) {
-    .center-1232 {
-        max-width: 1016px;
-    }
-}
-
-@media screen and (max-width: 1199px) {
-    .center-1232 {
-        max-width: 816px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .center-1232 {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 289px) {
-    .navbar-nav {
-        display:none;
-    }
-}
+/* --- CLOSE SLIDER BUTTON --- */

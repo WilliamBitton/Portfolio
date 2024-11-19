@@ -14,13 +14,13 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand mt-1 pe-1 center-1232">
+    <nav class="navbar navbar-expand p-0">
       <div class="container-fluid p-0">
-        <a id="Logo" class="navbar-brand z-index p-0 me-0" href="/"><img src="./assets/logo.svg"
+        <a id="Logo" class="navbar-brand z-index p-3 pe-0 me-0" href="/"><img src="./assets/logo.svg"
             alt="LOGO" width="40px"></a>
-        <a id="Logo-white" class="navbar-brand z-index p-0 me-0 d-none" href="/"><img
+        <a id="Logo-white" class="navbar-brand z-index p-3 pe-0 me-0 d-none" href="/"><img
             src="./assets/logo-white.svg" alt="LOGO" width="40px"></a>
-        <div class="navbar-nav border-bottom ms-1 me-1">
+        <div class="navbar-nav border-bottom ms-1 me-4 pe-2">
           <button class="nav-link handle-slider" id="SkillsLink" name="Skills" data-translate="skills"></button>
           <button class="nav-link handle-slider" id="CvLink" name="Cv" data-translate="cvNav"></button>
           <button class="nav-link handle-slider" id="ProjectsLink" name="Projects" data-translate="projects"></button>
@@ -33,22 +33,22 @@
   <div id="MainPage">
     <main>
       <!-- WELCOME-->
-      <div class="row center-1232 pt-5 pb-5 align-items-center border-bottom">
-        <div class="col-md-12 col-lg-5 col-xl-4 order-2 order-lg-1 p-0">
+      <div id="Welcome" class="row center-1232 pt-5 pb-5 align-items-center border-bottom">
+        <div class="col-12 col-md-4 order-2 order-md-1 p-3">
           <h1 data-translate="welcome"></h1>
         </div>
-        <div class="col-md-12 col-lg-7 col-xl-8 order-1 order-lg-2 p-0 pb-5">
+        <div class="col-12 col-md-8 order-1 order-md-2 p-3 pb-5">
           <img id="BackgroundImage" src="./assets/home.svg" alt="Home image">
         </div>
-        <div class="col-12 order-3 p-0">
+        <div class="col-12 order-3 p-3">
           <h3 class="mt-3">William Bitton</h3>
           <p class="mt-2 mb-5" data-translate="desc"></p>
-          <div class="mt-2 link-color">
-            <a class="m-2 ms-0" href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img
+          <div class="mt-2">
+            <a class="p-3 ps-0" href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img
                 src="./assets/linkedin-color.svg" alt="linkedin icon" width="30px"></a>
-            <a class="m-2" href="mailto:willbitton54@gmail.com"><img src="./assets/envelope-color.svg" alt="mail icon"
+            <a class="p-3" href="mailto:willbitton54@gmail.com"><img src="./assets/envelope-color.svg" alt="mail icon"
                 width="30px"></a>
-            <a class="m-2" href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github-color.svg"
+            <a class="p-3" href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github-color.svg"
                 alt="github icon" width="30px"></a>
           </div>
         </div>
@@ -56,131 +56,133 @@
       <!-- WELCOME-->
 
        <!-- SKILLS LIST-->
-      <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
+      <div class="pt-5 pb-5 mt-5 mb-5">
         <div id="Skills" class="row center-1232 align-items-center">
-          <h2 class="p-0" data-translate="skills"></h2>
-          <p class="mt-5 p-0" data-translate="descSkills"></p>
-          <div class="col-md-12 col-lg-6 col-xl-4 p-0">
-            <h3 class="mb-4 mt-5 mx-2" data-translate="programming"></h3>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+          <div class="col-12 col-sm-6 col-lg-12 p-3">
+            <h2 class="p-0" data-translate="skills"></h2>
+            <p class="mt-5 p-0" data-translate="descSkills"></p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 p-3">
+            <h3 class="mb-4 mt-5" data-translate="programming"></h3>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/java.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Java</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/node.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Node js</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/javascript.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Javascript</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/css.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">HTML & CSS</p>
-            </badge>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/react.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2"> React & React Native</p>
-            </badge>
+            </div>
           </div>
-          <div class="col-md-12 col-lg-6 col-xl-4 p-0">
-            <h3 class="mb-4 mt-5 mx-2" data-translate="tools"></h3>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+          <div class="col-12 col-sm-6 col-lg-4 p-3">
+            <h3 class="mb-4 mt-5" data-translate="tools"></h3>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/git-color.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Git</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/xcode.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Xcode</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/wordpress.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Wordpress</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/visual-code.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Visual Code</p>
-            </badge>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/android-studio.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Android Studio</p>
-            </badge>
+            </div>
           </div>
-          <div class="col-md-12 col-lg-12 col-xl-4 p-0">
-            <h3 class="mb-4 mt-5 mx-2" data-translate="design"></h3>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+          <div class="col-12 col-sm-6 col-lg-4 p-3">
+            <h3 class="mb-4 mt-5" data-translate="design"></h3>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/figma.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Figma</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/illustrator.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Illustrator</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/photoshop.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Photoshop</p>
-            </badge>
-            <badge class="card card-shadow mt-3 mb-3 mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow mt-3 mb-3 flex-row text-start">
               <img src="./assets/after-effects.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">After Effects</p>
-            </badge>
-            <badge class="card card-shadow mx-2 flex-row text-start">
+            </div>
+            <div class="card card-shadow flex-row text-start">
               <img src="./assets/premiere-pro.svg" class="card-img card-svg" alt="Image">
                 <p class="card-title mt-2">Premiere Pro</p>
-            </badge>
+            </div>
           </div>
         </div>
       </div>
       <!-- SKILLS LIST -->
 
       <!-- PROJECTS -->
-      <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
-        <div id="Projects" class="center-1232 align-items-center">
+      <div class="pt-5 pb-5 mt-5 mb-5">
+        <div id="Projects" class="row center-1232 align-items-center">
+          <div class="col-12 col-sm-6 col-lg-12 p-3">
             <h2 data-translate="projects"></h2>
             <p class="mt-5 mb-5" data-translate="descProjects"></p>
-            <div class="row">
-              <badge class="col-12 col-lg-4 card card-hover p-3">
-                <div class="badge-background">
+          </div>
+          <badge class="col-12 col-sm-6 col-lg-4 card p-3">
+                <div class="badge-background background-orange">
               <img src="./assets/muvac.png" class="card-img" alt="Image Muvac">
               <div class="overlay d-flex flex-column align-items-center">
                 <p data-translate="descMuvac" class="ms-5 me-5 mt-2 text-center white"></p>
-                <a href="https://www.muvac.com/en/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
+                <a href="https://www.muvac.com/en/" target="_blank"><button class="btn mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
             </div>
-              </badge>
-              <badge class="col-12 col-lg-4 card card-hover p-3">
-                <div class="badge-background">
+          </badge>
+          <badge class="col-12 col-sm-6 col-lg-4 card p-3">
+                <div class="badge-background background-orange">
               <img src="./assets/nadame.png" class="card-img" alt="Image Nadamé Design">
               <div class="overlay d-flex flex-column align-items-center">
                 <p data-translate="descNadame" class="ms-5 me-5 mt-2 text-center white"></p>
-                <a href="https://www.nadamedesign.com/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
+                <a href="https://www.nadamedesign.com/" target="_blank"><button class="btn mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
             </div>
-              </badge>
-              <badge class="col-12 col-lg-4 card card-hover p-3">
-                <div class="badge-background">
+          </badge>
+          <badge class="col-12 col-sm-6 col-lg-4 card p-3">
+                <div class="badge-background background-orange">
                   <img src="./assets/productions JSL.png" class="card-img" alt="Image Productions JSL">
               <div class="overlay d-flex flex-column align-items-center">
                   <p data-translate="descProductionsJSL" class="ms-5 me-5 mt-2 text-center white"></p>
-                  <a href="https://productionsjsl.com/" target="_blank"><button class="btn button-card-hover mt-0" data-translate="visitWebsite">Visit website</button></a>
+                  <a href="https://productionsjsl.com/" target="_blank"><button class="btn mt-0" data-translate="visitWebsite">Visit website</button></a>
               </div>
                 </div>
-              </badge>
-            </div>
+          </badge>
         </div>
       </div>
       <!-- PROJECTS / -->
 
       <!-- MUVAC PROJECT -->
-      <div class="blue">
-        <div id="MuvacProject" class="pt-5 pb-5 center-full-1512">
+      <div class="background-blue white">
+        <div id="MuvacProject" class="pt-5 pb-5">
           <div class="row center-1232 align-items-center pt-5 pb-5">
-            <div class="text-start pe-5 mb-5 p-0 col-12 col-lg-6">
+            <div class="text-start pe-5 mb-5 col-12 col-sm-6 p-3">
               <h2 data-translate="muvac"></h2>
               <p class="mt-5" data-translate="descMuvacProject"></p>
               <p class="mt-2" data-translate="descMuvacProject2"></p>
             </div>
-            <div class="col-12 col-lg-6 p-0 text-center">
+            <div class="col-12 col-sm-6 text-center p-3">
               <video src="./assets/rnapp1.mov" width="49%" loop autoplay controls muted playsinline></video>
               <video src="./assets/rnapp2.mov" width="49%" loop autoplay controls muted playsinline></video>
             </div>
@@ -190,22 +192,22 @@
       <!-- MUVAC PROJECT / -->
 
       <!-- FIRST PROJECT -->
-      <div class="orange">
-        <div id="FirstProject" class="pt-5 pb-5 center-full-1512">
+      <div class="background-orange white">
+        <div id="FirstProject" class="pt-5 pb-5">
           <div class="row center-1232 align-items-center pt-5 pb-5">
-            <div class="text-end ps-5 mb-5 p-0 col-12 col-lg-6 order-1 order-lg-2">
+            <div class="text-end ps-5 mb-5 col-12 col-sm-6 order-1 order-sm-2 p-3">
               <h2 data-translate="game"></h2>
               <p class="mt-5" data-translate="descGame"></p>
               <p class="mt-2" data-translate="descGame2"></p>
             </div>
-            <div class="col-12 col-lg-6 p-0 order-2 order-lg-1">
-              <badge class="card card-hover p-1">
-                <div class="badge-background">
+            <div class="col-12 col-sm-6 order-2 order-sm-1 p-3">
+              <badge class="card">
+                <div class="badge-background background-white">
                 <img src="./assets/memory-game.png" class="card-img" alt="Image">
                   <div class="overlay d-flex flex-column align-items-center">
                      <p data-translate="descGame3" class="ms-5 me-5 mt-2 text-center"></p>
                      <a href="./projects/memoryGame/index.html" target="_blank">
-                       <button data-translate="visitWebsite" class="btn button-card-hover d-flex mx-auto mt-0"></button>
+                       <button data-translate="visitWebsite" class="btn mt-0"></button>
                       </a>
                   </div>
                 </div>
@@ -217,21 +219,21 @@
       <!-- FIRST PROJECT -->
 
       <!-- CV -->
-      <div class="pt-5 pb-5 mt-5 mb-5 center-full-1512">
+      <div class="pt-5 pb-5 mt-5 mb-5">
           <div id="Cv" class="row center-1232 align-items-center">
-            <div class="text-start pe-5 mb-5 p-0 col-md-12 col-lg-6">
+            <div class="text-start pe-5 mb-5 col-12 col-sm-6 p-3">
               <h2 data-translate="cv"></h2>
               <p class="mt-5" data-translate="descCv"></p>
               <p class="mt-2" data-translate="descCv2"></p>
               <p class="mt-2" data-translate="descCv3"></p>
             </div>
-            <div class="col-md-12 col-lg-6 p-0">
-              <badge class="card card-hover p-1">
-                <div class="badge-background">
+            <div class="col-12 col-sm-6 p-3">
+              <badge class="card">
+                <div class="badge-background background-orange">
                   <img id="CvViewer" class="cv-image" alt="cv">
                   <div class="overlay d-flex flex-column align-items-center">
                     <a id="PdfDownload" href="#" download>
-                      <button data-translate="download" class="btn button-card-hover d-flex mx-auto mt-5"></button>
+                      <button data-translate="download" class="btn mt-5"></button>
                     </a>
                   </div>
                 </div>
@@ -244,24 +246,24 @@
     </main>
 
     <!-- FOOTER -->
-    <div class="blue">
-    <footer class="text-center pt-4 center-full-1512">
+    <div class="background-blue white">
+      <footer class="text-center pt-4">
       <div class="d-flex justify-content-between p-3 mx-auto">
-        <a href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img src="./assets/linkedin.svg"
+        <a class="p-3" href="https://www.linkedin.com/in/william-bitton-b55473292" target="_blank"><img src="./assets/linkedin.svg"
             alt="linkedin icon" width="40px"></a>
-        <a href="mailto:willbitton54@gmail.com"><img src="./assets/envelope.svg" alt="mail icon" width="40px"></a>
-        <a href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github.svg" alt="github icon"
+        <a class="p-3" href="mailto:willbitton54@gmail.com"><img src="./assets/envelope.svg" alt="mail icon" width="40px"></a>
+        <a class="p-3" href="https://github.com/WilliamBitton" target="_blank"><img src="./assets/github.svg" alt="github icon"
             width="40px"></a>
       </div>
       <p class="mt-3 mb-0 pb-4" data-translate="footer"></p>
-    </footer>
-  </div>
+      </footer>
+    </div>
     <!-- FOOTER / -->
   </div>
 
-  <div id="Slider" class="hide-left orange">
-    <div class="button-close-container">
-      <button class="button-close handle-slider" name="CloseSlider"><img src="./assets/arrow.svg" alt="X"
+  <div id="Slider" class="hide-left background-orange white">
+    <div class="close-slider-button-container center-1232">
+      <button class="handle-slider p-3" name="CloseSlider"><img src="./assets/arrow.svg" alt="X"
           width="40px">
       </button>
     </div>
