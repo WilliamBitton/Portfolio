@@ -17,7 +17,7 @@
 h1 {
     font-family: 'WixMadeforText-Bold', Arial, sans-serif;
     font-size: clamp(32px, 4.9vw, 48px);
-    color: #FF8514;
+    color: #f89940;
 }
 
 h2 {
@@ -50,7 +50,7 @@ a {
 }
 
 .background-orange {
-    background-color: #FF8514;
+    background-color: #f89940;
 }
 
 .background-white {
@@ -224,13 +224,13 @@ badge button:hover {
 }
 
 #FirstProject badge button {
-    color: #FF8514 !important;
-    border-color: #FF8514 !important;
+    color: #f89940 !important;
+    border-color: #f89940 !important;
 }
 
 #FirstProject badge button:hover {
     color: white !important;
-    background-color: #FF8514 !important;
+    background-color: #f89940 !important;
 }
 /* --- BADGE BUTTON --- */
 
