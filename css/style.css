@@ -17,7 +17,7 @@
 h1 {
     font-family: 'WixMadeforText-Bold', Arial, sans-serif;
     font-size: clamp(32px, 4.9vw, 48px);
-    color: #f8632c;
+    color: #FF8514;
 }
 
 h2 {
@@ -46,11 +46,11 @@ a {
 }
 
 .background-blue {
-    background-color: #363CBF;
+    background-color: #85AAE5;
 }
 
 .background-orange {
-    background-color: #f8632c;
+    background-color: #FF8514;
 }
 
 .background-white {
@@ -74,7 +74,7 @@ nav, .center-1232 {
     cursor: pointer;
     font-style: italic;
     transform: scale(1.1);
-    color: #363CBF;
+    color: #85AAE5;
 }
 
 .z-index {
@@ -128,10 +128,10 @@ footer div a:hover,
     right: 20px;
     z-index: 1000;
     display: none;
-    background-color: #363CBF;
+    background-color: #85AAE5;
     color: white;
     border: none;
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 10px 15px;
     font-size: 18px;
     cursor: pointer;
@@ -141,7 +141,7 @@ footer div a:hover,
 
 #scrollToTopBtn:hover {
     background-color: white;
-    color: #363CBF;
+    color: #85AAE5;
 }
 /* --- SCROLL TO TOP BUTTON --- */
 
@@ -224,13 +224,13 @@ badge button:hover {
 }
 
 #FirstProject badge button {
-    color: #f8632c !important;
-    border-color: #f8632c !important;
+    color: #FF8514 !important;
+    border-color: #FF8514 !important;
 }
 
 #FirstProject badge button:hover {
     color: white !important;
-    background-color: #f8632c !important;
+    background-color: #FF8514 !important;
 }
 /* --- BADGE BUTTON --- */
 
@@ -254,17 +254,17 @@ badge button:hover {
 }
 
 #SliderContent badge p {
-    color: #363CBF !important;
+    color: #85AAE5 !important;
 }
 
 #SliderContent badge button {
-    color: #363CBF !important;
-    border-color: #363CBF !important;
+    color: #85AAE5 !important;
+    border-color: #85AAE5 !important;
 }
 
 #SliderContent badge button:hover {
     color: white !important;
-    background-color: #363CBF !important;
+    background-color: #85AAE5 !important;
 }
 /* --- SLIDER --- */
 
