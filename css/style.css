@@ -132,7 +132,9 @@ footer div a:hover,
     color: white;
     border: none;
     border-radius: 100%;
-    padding: 10px 15px;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
     font-size: 18px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
